@@ -273,7 +273,7 @@ aside{display:grid; gap:10px; color:black;position:fixed;font-style:italic;
                    opacity: 0;
                }
                100% {
-                   transform: translateX(190px) translateY(30px) scale(1);
+                   transform: translateX(90px) translateY(30px) scale(1);
                    opacity: 0.5;
                }
            }
@@ -293,7 +293,7 @@ aside{display:grid; gap:10px; color:black;position:fixed;font-style:italic;
                    opacity: 0;
                }
                100% {
-                   transform: translateX(350px) translateY(230px) scale(1);
+                   transform: translateX(150px) translateY(230px) scale(1);
                    opacity: 0.5;
                }
            }
@@ -303,7 +303,7 @@ aside{display:grid; gap:10px; color:black;position:fixed;font-style:italic;
                    opacity: 0;
                }
                100% {
-                   transform: translateX(290px) translateY(130px) scale(1);
+                   transform: translateX(190px) translateY(130px) scale(1);
                    opacity: 0.5;
                }
            }		
