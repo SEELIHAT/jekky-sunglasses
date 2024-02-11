@@ -11,7 +11,7 @@
                     inset 10px 10px 0 0 goldenrod;}
 @keyframes  transla{
     10% {
-        transform:translateX(190px)translateY(10px)scale(0);
+        transform:translateX(100px)translateY(10px)scale(0);
         opacity: 0.3;
     }
     100% {
@@ -41,11 +41,11 @@
 }
 @keyframes rota{ 
     10% {
-        transform: translateX(10px)translateY(-30px) scale(0);
+        transform: translateX(10px)translateY(30px) scale(0);
         opacity: 0.3;
     }
     100% {
-        transform: translateX(115px) translateY(30px) scale(1);
+        transform: translateX(105px) translateY(30px) scale(1);
         opacity: 1;
     }
 }
