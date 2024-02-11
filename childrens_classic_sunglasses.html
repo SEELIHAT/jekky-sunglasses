@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="description" content="Welcome to Optica Jekky in the Petropavlovsk-Kamchatsky.Here you can choose sunglasses for woman. ">
+  <meta name="keywords" content="Optic Jekky womans sunglasses">
+  <meta name="author" content="Evgenii">
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Womans  classic sunglasses"</title>
+ 
+    <link rel="stylesheet" href="jekky.css">
+<link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
+	
+    <script src="js/sunglasess.min.js" defer></script>
+    <script src="js/keks.min.js" defer></script>
+</head>
+
+<style>
+#carousel-container {margin-top:30px;
+            width: 300px;height:300px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+			border:3px solid yellow;
+        }
+
+        #image-container {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-image {
+            width: 100%;
+            height: auto;
+        }
+
+        #prevBtn, #nextBtn {
+             position: absolute;
+            top: 90%;
+            transform: translateY(-50%);
+            cursor: pointer;
+			border:3px solid yellow;
+			font-size:15px;
+        }
+
+        #prevBtn {
+            left: 5px;
+        }
+
+        #nextBtn {
+            right: 5px;
+        }
+       
+		</style>
+
+
+
+
+<body class="page">
+<header >
+  <div  class="basket">
+    <img class="bask" src=".\images\basket.png" width="50" height="50">
+    <a class="finishbutton" href="#sender"onclick = "changeOpacity()" ><p class="finish"> Завершить заказ</p></a> </div>
+    <aside class="asidewoman">
+        <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
+            <img style="width:20px ; height:20px; padding:5px;" src=".\images\google.jpg" width:20px;height:20px;></a>
+            <a href="https://www.instagram.com/opticajekky?igsh=MWx2ZmhuOGZsZ2s4OA">
+                 <img style="width:20px ; height:20px; padding:5px;" src=".\images\insta.jpg" width:20px;height:20px;>
+                </a>
+        <a  href="https://wa.me/+79622923791">
+         <img style="width:20px ; height:20px; padding:5px; " src=".\images\wats.jpg"
+          width:20px;height:20px;></a>
+       <a  href="tel:+79622923791"> <img style="width:20px ; height:20px; padding:5px;" src="images\phone.jpg"
+         width:20px;height:20px;></a>
+    </aside>
+    <div class="underpage"><a class="undera" href="Optic_Jekky_shop.html">
+      <img class="underphoto" src=".\images\shopi.png"></a>
+      <a class="undera" href="#chose"><img class="underphoto"  src=".\images\choose.png"></a>
+      <a class="undera" href="Sertificat_0ptic_Jekky.html">
+      <img class="underphoto" src=".\images\certification.png"></a>
+      <a class="undera" href="Check_you_glasses.Html">
+          <img class="underphoto" src=".\images\O nashem oborudo.png"></a></div>
+      <img class="background" src=".\images\yaes.png">
+<img class="img" src=".\images\sungirl.png" alt="Sun Girl">  
+<nav> 
+
+
+  <nav> 
+    <div style="display:flex; gap:20px;">
+      <div  style="z-index:1600;"class="dropdown">
+        <button class="button">Меню</button>
+        <div class="dropdown-content" > 
+          
+              <a  href="Sertificat_0ptic_Jekky.html">Hаша документация</a>
+              <a  href="#">Hаш магазин</a>
+              <a  href="Program_for_choose_on_the_face.html">Программа выбора очков на лице</a>
+              <a  href="Program_for_choose_in_catalog.html">Программа выбора очков в каталоге</a>
+              <a  href="#lensmetr">О нашем оборудовании</a>
+              <a  href="Colors_contact_lens.html">Контактные линзы цветные"Hera"</a>
+              <a  href="lens_soflens.html">Контактные линзы "Soflens"</a>
+              <a  href="Accsesuars.html">Аксессуары</a>
+              <a  href="#">Вода для линз</a>
+              <a  href="#contacts">Контакты</a>
+         
+        </div>
+      </div>
+      
+      <div  style="z-index:1600;" class="dropdown">
+          <button style="width:120px;" class="button">Сделать заказ</button>
+          <div class="dropdown-content" > 
+                <a  href="Program_for_choose_on_the_face.html">Программа выбора очков на лице</a>
+                <a  href="Program_for_choose_in_catalog.html">Программа выбора очков в каталоге</a>
+                  
+          </div>
+        </div>
+        <a  style="padding:5px;" class="button" href="#contacts">Контакты</a>
+      </div>
+    <img class="svg" src="images\optik.svg" width="60" height="60"  alt="Jekky">
+
+
+
+    </nav>
+    <h3 class="h3">Optica "Jekky"</h3>
+
+    <div class="image-containe">
+        <img src=".\images\DUBAI.png" class="image1">
+        <img src=".\images\fatman.png" class="image2">
+        <img src=".\images\lensses.png" class="image3">
+        <img src=".\images\mountain sky.png" class="image4">
+        <img src=".\images\sungirl.png" class="image5">
+        <img src=".\images\women.png" class="image6">
+        <img src=".\images\boy.png" class="image7">
+    </div>	
+
+
+    <section id="hop">
+      <div class="hop">
+          <a  href="https://youtu.be/av7YWI1MYXU?si=Xjjt7RgBPnpiXPy8" >
+              <img class="video-container" src=".\images\shop.jpg" width="280" height="180" ></a></div>
+        
+       
+   </section>
+
+<section id="products">
+  
+
+		
+    <h1 class="h1">
+        Наша коллекция детских очкoв.</h1>
+
+        <h2 class="animate">&nbsp;&nbsp;Программа для выбора поляризованных детских  солнцезащитных 
+            очков из каталога .</h2>
+<div style="width:100%;"class="psecond"><p>&nbsp;"
+
+
+    &nbsp;<span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">"Яркие улыбки: </span> A Guide to Choosing and Using Children's Sunglasses
+
+    <br>&nbsp;Руководство по выбору и использованию детских солнцезащитных очков Как родители, мы часто уделяем приоритетное внимание благополучию наших детей, обеспечивая им всемерную защиту и заботу. Когда дело доходит до активного отдыха, часто бывает один важный предмет.
+     упускаемый из виду — это пара качественных солнцезащитных очков, 
+     разработанных специально для детей. Давайте углубимся в то, почему детские солнцезащитные очки так важны и как обеспечить, чтобы ваши малыши носили их стильно и безопасно. 𝕬𝖌𝖊: Детские
+    глаза  больше восприимчивы к повреждению от вредных УФ-лучей солнца, чем глаза взрослых.
+     Длительное воздействие УФ-излучения в детстве увеличивает риск проблем со зрением
+     в более позднем возрасте. Выбор солнцезащитных очков со 100% УФ-защитой является профилактической мерой для защиты развивающихся глаз вашего ребенка.
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Веселый и красочный дизайн:</span><br>
+    
+    &nbsp;Cделайте ношение солнцезащитных очков приятным для ваших детей, выбрав оправы с забавным и ярким дизайном. в их ношении.
+     
+    
+      <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">
+    Прочность для активной жизни:</span>
+    
+    &nbsp;Дети от природы активны, и их аксессуары должны идти в ногу с их приключениями. Выбирайте солнцезащитные очки из прочных материалов, которые выдержат удары и падения во время игры. Ищите такие функции, 
+    как устойчивые к разрушению линзы и гибкая оправа, чтобы обеспечить долговечность.
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Комфорт – это ключ к успеху:</span>
+    
+    &nbsp; Дети могут быть менее склонны носить солнцезащитные очки, если они кажутся им неудобными. Ищите легкие оправы с мягкими регулируемыми носовыми упорами и кончиками заушников. Удобная посадка гарантирует, что ваш ребенок с большей вероятностью будет носить солнцезащитные очки, 
+    обеспечивая надежную защиту, когда он находится на открытом воздухе.
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Поляризованная линза для уменьшения резкости:</span>
+    
+    &nbsp; Поляризационные линзы не только защищают от ультрафиолета; они также уменьшают блики, делая занятия на свежем воздухе более комфортными и приятными для вашего ребенка. Играют ли они на пляже, катаются на велосипеде или просто исследуют окрестности,
+     поляризационные линзы повышают четкость зрения и снижают нагрузку на глаза.
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Руководствуйтесь примером:</span>
+    
+    &nbsp; Дети часто подражают поведению окружающих. Если они увидят, что вы постоянно носите солнцезащитные очки на открытом воздухе, они с большей вероятностью переймут эту привычку. Сделайте солнцезащитные очки 
+    семейным делом и подчеркните важность защиты глаз с раннего возраста.
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Обучайте и поощряйте:</span>
+    
+    &nbsp;Найдите минутку, чтобы объяснить своим детям, почему солнцезащитные очки необходимы. Помогите им понять, что солнцезащитные очки защищают глаза так же, как солнцезащитный крем защищает их кожу. Объясняя им важность ухода за глазами, вы даете им возможность сделать осознанный выбор в отношении своего здоровья. В заключение отметим, что детские солнцезащитные очки — это больше, чем просто милый аксессуар; они являются жизненно важным инструментом в защите своего видения. Благодаря правильному сочетанию защиты от ультрафиолета, долговечности, комфорта и стиля эти солнцезащитные очки станут надежным спутником в приключениях вашего ребенка на свежем воздухе.
+    
+    
+     <br><span style="color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;">Итак, пусть их глаза сияют не только радостью, 
+     но и дополнительной защитой качественных солнцезащитных очков.</span>
+     <br><br>
+     <h3 id="chose">Инструкция по использованию нашей программы.</h3>
+     <br> 1. Вы выбираете очки и нажимаете на фотографию.<br>
+     <br>2.Фотография будет иметь красную рамку. Если вы ошиблись, нажмите на фото еще раз и снова выберите другие очки.<br>
+     <br>3.После этого вы увидите корзину с кнопкой <SPAN style="border:2px solid red; color:red;">Завершить заказ</span><br>
+     
+     <br>4.После того ,как вы нажмёте <SPAN style="border:2px solid red; color:red;">Завершить заказ</SPAN>  в форме вы пишете адрес и телефон и нажимаете<span style="border:3px solid red; color:black;border-radius:10px 5px 10px 5px;"> Oтправить заказ</span><br>
+      
+     <br> 5. Вы перейдете на страницу Электронная почта вашей страницы и проверяете заказ, если надо дополняете нужной информацией и отправите. <br>
+     
+     
+     <br>6.Если у вас возникнут проблемы с чем-то, вы можете сделать это проще.
+        Идите вниз до кнопки Telegram и там нажмите и пришлите нам только номер телефона и номер очков то, что написано под фото.<br>
+     <br>7.И отправив письмо, вы услышите наш звонок через 15 минут.<br>
+     <br>8.Хорошего дня и удачных покупок.<br>
+    </p></div></section>
+</header>
+
+
+<style>
+   
+    </style>
+    
+    
+<div class="image-containe">
+    <img src=".\images\DUBAI.png" class="image1">
+    <img src=".\images\fatman.png" class="image2">
+    <img src=".\images\lensses.png" class="image3">
+    <img src=".\images\mountain sky.png" class="image4">
+    <img src=".\images\sungirl.png" class="image5">
+    <img src=".\images\women.png" class="image6">
+    <img src=".\images\boy.png" class="image7">
+    </div>
+
+    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+     <div class="photobar">
+      <div>
+        <img  id="photo1" src=".\images\childrens.png" onclick="selectPhoto(1)">
+        <div class="gat"><span id="price1">Цена: 500 руб.</span></div>
+      </div>
+      <div>
+        <img id="photo2" src=".\images\DUBAI.png" onclick="selectPhoto(2)">
+        <div class="gat"><span id="price2">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo3" src=".\images\sungirl.png" onclick="selectPhoto(3)">
+        <div class="gat"><span id="price3">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo4" src=".\images\mountain sky.png" onclick="selectPhoto(4)">
+        <div class="gat" ><span id="price4">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo5" src=".\images\boy.png" onclick="selectPhoto(5)">
+        <div class="gat"><span id="price5">Цена: 500 руб.</span></div>
+      </div>
+      <div>
+        <img id="photo6" src=".\images\chinamen.png" onclick="selectPhoto(6)">
+        <div class="gat"><span id="price6">Цена: 500 руб.</span></div>
+      </div>
+      <div>
+        <img id="photo7" src=".images\DSC_0138.jpg" onclick="selectPhoto(7)">
+        <div class="gat"><span id="price7">Цена: 500 руб.</span></div>
+      </div>
+       <div>
+        <img  id="photo8" src="photo1.jpg" onclick="selectPhoto(8)">
+        <div class="gat"><span id="price8">Цена: 500 руб.</span></div>
+      </div>
+      <div>
+        <img id="photo9" src="photo2.jpg" onclick="selectPhoto(9)">
+        <div class="gat"><span id="price9">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo10" src="photo3.jpg" onclick="selectPhoto(3)">
+        <div class="gat"><span id="price3">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo11" src="photo3.jpg" onclick="selectPhoto()">
+        <div class="gat"><span id="price3">Цена: 500 руб.</span></div>
+      </div>
+	  <div>
+        <img id="photo12" src="photo3.jpg" onclick="selectPhoto(3)">
+        <div class="gat"><span id="price3">Цена: 500 руб.</span></div>
+      </div>
+      <div>
+        <img id="photo13" src="photo3.jpg" onclick="selectPhoto(3)">
+        <div class="gat" ><span id="price3">Цена: 500 руб.</span></div>
+      </div>
+    </div>
+    <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
+     justify-content:center;">
+       
+      <div  class="senter" id="sender">
+       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
+       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
+         где сможете добавить информацию и проверить заказ.<br>
+         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
+      <div style="display:grid;text-align: center;">
+      <!-- Add hidden input for selected photos -->
+      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
+      
+      
+      
+        <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">Напишите адрес и телефон : </label>
+        <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
+Тел:
+
+Адрес:
+
+Время когда принести:</textarea></div>
+        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
+        border-radius:15px 20px 15px 20px;
+          width:130px;height:60px;" type="submit">Отправить заказ</button>
+      
+    </div>
+    </form>
+    <div  class="senter" id="sender">
+      &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
+      &nbsp;&nbsp;<br>Вы можете сделать это проще,
+      просто подпишитесь на нас в телеграмме и напишите номер телефона и номер очков.<br>
+        &nbsp;&nbsp;Для этого нажмите кнопку <span style="background-color:rgb(85, 85, 238);color:white;border:2px solid rgb(85, 85, 238); border-radius:2px 2px 2px  2px;">«Присоединяйтесь к нашему Telegram-каналу»</span></div>
+  <div id="telegram-widget">
+      <a href="https://t.me/+1OGg0Nllj5kzZjJi" target="_blank">
+        <img src=".\images\telega.jpg" alt="Telegram Logo">
+        <span>Присоединяйтесь к нашему Telegram-каналу</span>
+      </a>
+    </div>
+
+    <p style="text-align:center; font-size:18px; color:red;" class="psecond">Если вы не выбрали солнцезащитные очки.<br> 
+      Идите вниз и нажмите там кнопку «Выбрать по лицу».</p>
+    
+
+<div style="display:flex; ">
+  <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
+  </div>
+<div style="margin-top:30px; text-align:center;"  id="carousel-container">
+  
+<div id="image-container">
+            <!-- Add your images here -->
+			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
+            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
+            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
+            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
+            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
+            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
+        </div>
+        </div>
+	  
+      
+      <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
+   </div>
+   <button  style="border:3px solid black; margin-bottom:10px;box-shadow:3px 2px 1px red;
+    border-radius:15px 20px 15px 20px;
+    width:130px;height:60px; font-size:15px; text-align:center; margin-left:45%; margin-top:20px;">
+    <a class="a" href="">
+          Выбирайте очки по лицу</a></button>
+
+
+<div style="margin-bottom:30px;display:flex;border:5px solid yellow; border-radius:5px 55px 5px 55px; overflow: hidden;">
+  
+<div id="contacts" style="margin:20px;gap:15px;"class="footer"><br>
+        <h2>Связаться с нами</h2>
+        <p>Смело обращайтесь к нам:</p>
+        <address style="display:grid; gap:10px;">
+            Электронная почта: <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
+            <a class="a" href="tel:+79315908599">Телефон: +79315908599;</a>
+			<a class="a" aria-label="WhatsApp" href="https://wa.me/1XXXXXXXXXX"><img alt="Chat on WhatsApp"
+                 src="WhatsAppButtonGreenLarge.svg" />
+</a>
+        </address>
+    <p>&copy; 2023 Оптика "Jekky"</p></div><div>
+	<img style="width:250px;height:250px; border:1px solid yellow;border-radius:50%;
+	justify-content:space-around;margin-top:40px;" src="C:\Users\evgenii\Desktop\new\optik.svg">
+	</div>
+  <div class="bod">
+    <a class="dno" href="#">Наш магазин</a>
+    <a class="dno" href="#">Выбор по лицу</a>
+    <a class="dno" href="#">Перейти к началу</a>
+    <a class="dno" href="#">Информация о нас</a>
+    <a class="dno" href="#">Сертификация</a>
+    <a class="dno" href="#">Документация</a>
+    <a class="dno" href="#">Как выбрать</a>
+
+</div>
+</div>
+<script src="js/woman.min.js" ></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+svg{position:absolute;top:-30px; left:20%;} 
+.sectext{text-align:center;}
+#carousel-container {
+        margin-top: 30px;
+        width: 300px;height:400px;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        box-shadow:inset -10px -10px 0 0 rgb(152, 132, 19),
+		inset -10px -10px 0 0 rgb(152, 132, 19);
+    }
+
+    #image-container {
+        display: flex;
+        transition: transform 0.5s ease;
+        position: relative;
+    }
+
+    .carousel-image {
+        width: 300px;height:400px;
+        height: auto;
+        opacity: 0.5;
+    }
+
+    #prevBtn,
+    #nextBtn,
+    #sendToEmail {
+        position: absolute;
+        top: 90%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        border: 3px solid yellow;
+        font-size: 15px;
+    }
+
+    #prevBtn {
+        left: 5px;
+    }
+
+    #nextBtn {
+        right: 5px;
+    }
+
+    #sendToEmail {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+	
+form{margin-top:30px;}
+ form img{width:90px;height:120px;}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 250px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: grid;
+    }
+	.section{margin:20px;}
+  
+	.a:hover{ color:black;font-size:15px;text-shadow:1px 1px 1px red;}
+.pp{padding:5px; border:2px solid black;}
+	.up{padding:5px; border:2px solid black;margin:10px;}
+	.down{padding:5px; border:2px solid black;margin:10px;}
+	.left{padding:5px; border:2px solid black;margin:10px;}
+	.right{padding:5px; border:2px solid black;margin:10px;}
+	.prev{padding:5px; border:2px solid black;margin:10px;}
+	.next{padding:5px; border:2px solid black;margin:10px;}
+	.more{padding:5px; border:2px solid black;margin: 10px;}
+	.less{padding:5px; border:2px solid black;margin:10px;}
+	.circle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.circle {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  transition: stroke-dasharray 1.5s ease-out, stroke-dashoffset 1.5s ease-out;}
+
+  .a{text-align:center;background-color:#9c1010; color:yellow; margin:auto;width:100%;}	
