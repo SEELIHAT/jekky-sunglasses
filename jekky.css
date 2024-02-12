@@ -45,7 +45,7 @@
         opacity: 0.3;
     }
     100% {
-        transform: translateX(115px) translateY(30px) scale(1);
+        transform: translateX(15px) translateY(30px) scale(1);
         opacity: 1;
     }
 }
