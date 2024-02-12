@@ -79,7 +79,7 @@
         opacity:1;
     }
 }
-.page{width:100%;overflow: hidden;}    		
+   		
 .image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;overflow: hidden;}
 
 #carousel-container{ box-shadow :inset -10px -10px 0 0 goldenrod,
