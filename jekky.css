@@ -1,9 +1,9 @@
 .image-containe img:nth-of-type(1){position:absolute;  top: 5%; left:10%;  animation-name:transla; animation-duration:10s; z-index:100; opacity:0;overflow: hidden;}
     .image-containe img:nth-of-type(2){position:absolute;  top: 20%; left:30%; animation-name:rota; animation-duration:10s; z-index:100; opacity:0;overflow: hidden;}
-    .image-containe img:nth-of-type(3){position:absolute;  top: 30%; left:50%; animation-name:transforX; animation-duration:10s; z-index:100; opacity:0;overflow: hidden;}
-    .image-containe img:nth-of-type(4){position:absolute;  top: 15%; left:60%; animation-name:transforY; animation-duration:  10S; z-index:100 ;opacity:0;overflow: hidden;}
+    .image-containe img:nth-of-type(3){position:absolute;  top: 50%; left:50%; animation-name:transforX; animation-duration:10s; z-index:100; opacity:0;overflow: hidden;}
+    .image-containe img:nth-of-type(4){position:absolute;  top: 15%; left:10%; animation-name:transforY; animation-duration:  10S; z-index:100 ;opacity:0;overflow: hidden;}
     .image-containe img:nth-of-type(5){position:absolute;  top: 10%; right:10%; animation-name:translat; animation-duration:  10S; z-index:100;opacity:0;overflow: hidden;}
-     .image-containe img:nth-of-type(6){position:absolute;  top: 3%;right:30%;  animation-name:trantwo; animation-duration:10s; z-index:100;opacity:0;overflow: hidden;}
+     .image-containe img:nth-of-type(6){position:absolute;  top: 53%;right:30%;  animation-name:trantwo; animation-duration:10s; z-index:100;opacity:0;overflow: hidden;}
     .image-containe img:nth-of-type(7){position:absolute;  top: 8%; right:40%; animation-name:tranfree; animation-duration:10s; z-index:100;opacity:0;overflow: hidden;}		
 .image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;overflow: hidden;}
 
