@@ -5,7 +5,7 @@
     .image-containe img:nth-of-type(5){position:absolute;  top: 300px; left:15%; animation-name:translat; animation-duration:  10S; z-index:100;opacity:0;}
      .image-containe img:nth-of-type(6){position:absolute;  top: 300px; right:15%; animation-name:trantwo; animation-duration:10s; z-index:100;opacity:0;display:none;}
     .image-containe img:nth-of-type(7){position:absolute;  top: 50px; right:50%; animation-name:tranfree; animation-duration:10s; z-index:100;opacity:0;display:none;}		
-.image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;}
+.image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;overflow: hidden;}
 
 #carousel-container{ box-shadow :inset -10px -10px 0 0 goldenrod,
                     inset 10px 10px 0 0 goldenrod;}
