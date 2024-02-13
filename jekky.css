@@ -1,59 +1,59 @@
-.image-containe img:nth-of-type(1){position:absolute;  top: 200px; left:15%;  animation-name:transla; animation-duration:10s; z-index:100; opacity:0;}
-    .image-containe img:nth-of-type(2){position:absolute;  top: 200px; right:15%; animation-name:rota; animation-duration:10s; z-index:100; opacity:0}
-    .image-containe img:nth-of-type(3){position:absolute;  top: 100px; left:15%; animation-name:transforX; animation-duration:10s; z-index:100; opacity:0;}
-    .image-containe img:nth-of-type(4){position:absolute;  top: 100px; right:15%; animation-name:transforY; animation-duration:  10S; z-index:100 ;opacity:0;}
-    .image-containe img:nth-of-type(5){position:absolute;  top: 300px; left:15%; animation-name:translat; animation-duration:  10S; z-index:100;opacity:0;}
+.image-containe img:nth-of-type(1){position:absolute;  top: 200px; left:15%;  animation-name:transla; animation-duration:10s; z-index:100; opacity:0;display:none;}
+    .image-containe img:nth-of-type(2){position:absolute;  top: 200px; right:15%; animation-name:rota; animation-duration:10s; z-index:100; opacity:0;display:none;}
+    .image-containe img:nth-of-type(3){position:absolute;  top: 100px; left:15%; animation-name:transforX; animation-duration:10s; z-index:100; opacity:0;display:none;}
+    .image-containe img:nth-of-type(4){position:absolute;  top: 100px; right:15%; animation-name:transforY; animation-duration:  10S; z-index:100 ;opacity:0;display:none;}
+    .image-containe img:nth-of-type(5){position:absolute;  top: 300px; left:15%; animation-name:translat; animation-duration:  10S; z-index:100;opacity:0;display:none;}
      
 .image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;overflow: hidden;}
 
 #carousel-container{ box-shadow :inset -10px -10px 0 0 goldenrod,
                     inset 10px 10px 0 0 goldenrod;}
 @keyframes  transla{
-    10% {
+    10% {display:block;
         transform:translateX(190px)translateY(10px)scale(0);
         opacity: 0.3;
     }
-    100% {
+    100% {display:block;
         transform: translateX(30px) translateY(90px) scale(1);
         opacity: 1;
     }
 }
 @keyframes transforX {
-    10% {
+    10% {display:block;
         transform: translate(0) scale(0);
         opacity: 0.3;
     }
-    100% {
+    100% {display:block;
         transform: translateY(90px) translateX(30px) scale(1);
         opacity: 1;
     }
 }
 @keyframes transforY {
-    10% {
+    10% {display:block;
         transform: translateY(-30px)translateY(10px) scale(0);
         opacity: 0.3;
     }
-    100% {
+    100% {display:block;
         transform: translateX(-30px)translateY(155px) scale(1);
         opacity: 1;
     }
 }
 @keyframes rota{ 
-    10% {
+    10% {display:block;
         transform: translateX(10px)translateY(-30px) scale(0);
         opacity: 0.3;
     }
-    100% {
+    100% {display:block;
         transform: translateX(15px) translateY(-40px) scale(1);
         opacity: 1;
     }
 }
 @keyframes translat{ 
-    0% {
+    0% {display:block;
         transform: translateY(30px) translateX(-50px) scale(0);
         opacity: 0.3;
     }
-    100% {
+    100% {display:block;
         transform: translateY(190px) translateX(100px)  scale(1);
         opacity: 1;
     }
