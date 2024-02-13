@@ -58,6 +58,9 @@
         opacity: 1;
     }
 }
+body {
+    overflow-x: hidden;
+}
 
    		
 .image-containe img{ width:80px; height:80px; border-radius:50%; border:3px solid yellow; z-index:100;overflow: hidden;}
