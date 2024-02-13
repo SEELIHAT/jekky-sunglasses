@@ -129,7 +129,8 @@ div .hop{display:grid; gap:10px;}
 .light-theme{ color: #333333;
      background-color:yellow;
    }
-   body{background-color:gold;}
+   body{background-color:gold;overflow-x:hidden;
+   }
 .p{text-align:center; color:red;}
 .push{width:120px; height:150px;}
 .pens{display:flex; gap:15px; justify-content:space-around; margin:auto;flex-wrap:wrap;margin:auto;padding:20px;}
