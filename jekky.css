@@ -354,7 +354,7 @@ div .hop{display:grid; gap:10px;}
                   width: 1px;
                 }
               }
-              nav{overflow-x: hidden;}
+             
                .underpage{position:absolute; bottom: 5px;left:30%;overflow: hidden;display:flex; flex-wrap: wrap;} 
                .underphoto{width:150px; height:80px; margin-left:50px; border: 5px solid red; border-radius:15px 15px 15px 15px;overflow: hidden;}
 
