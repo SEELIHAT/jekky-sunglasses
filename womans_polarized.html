@@ -15,45 +15,47 @@
 	
     <script src="js/sunglasess.min.js" defer></script>
     <script src="js/keks.min.js" defer></script>
+
+    <style>
+      #carousel-container {margin-top:30px;
+                  width: 300px;height:300px;
+                  overflow: hidden;
+                  position: relative;
+                  margin: auto;
+            border:3px solid yellow;
+              }
+      
+              #image-container {
+                  display: flex;
+                  transition: transform 0.5s ease;
+              }
+      
+              .carousel-image {
+                  width: 100%;
+                  height: auto;
+              }
+      
+              #prevBtn, #nextBtn {
+                   position: absolute;
+                  top: 90%;
+                  transform: translateY(-50%);
+                  cursor: pointer;
+            border:3px solid yellow;
+            font-size:15px;
+              }
+      
+              #prevBtn {
+                  left: 5px;
+              }
+      
+              #nextBtn {
+                  right: 5px;
+              }
+             
+          </style>
+      
 </head>
 
-<style>
-#carousel-container {margin-top:30px;
-            width: 300px;height:300px;
-            overflow: hidden;
-            position: relative;
-            margin: auto;
-			border:3px solid yellow;
-        }
-
-        #image-container {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-image {
-            width: 100%;
-            height: auto;
-        }
-
-        #prevBtn, #nextBtn {
-             position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            cursor: pointer;
-			border:3px solid yellow;
-			font-size:15px;
-        }
-
-        #prevBtn {
-            left: 5px;
-        }
-
-        #nextBtn {
-            right: 5px;
-        }
-       
-		</style>
 
 
 
