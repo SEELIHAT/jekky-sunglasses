@@ -312,7 +312,8 @@ div .hop{display:grid; gap:10px;}
                                 box-shadow:5px 5px 2px 2px black,
                             -5px -5px 0 0 black; margin:40px; justify-items:center;text-align:center;}
 
-                               .mainprogram a{ padding:5px;margin:25px;font-size:20px; font-weight: bold; text-align:center; color:white;margin:auto; }
+                               .mainprogram a{ padding:5px;margin:25px;font-size:20px; font-weight: bold; text-align:center; color:white;
+                                margin:auto; }
                               
             .ras{margin-left:25%;margin-top:3%;border:3px solid red;width:200px;height:200px;overflow: hidden;}
             .dwa{margin-left:3%;margin-top:-30%; border:3px solid red;width:200px;height:200px;overflow: hidden;}
