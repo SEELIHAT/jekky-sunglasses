@@ -51,7 +51,17 @@
               #nextBtn {
                   right: 5px;
               }
-             
+              
+              @media (max-width: 1270px) {
+                .underpage {overflow:hidden;
+                  display: none; position:absolute; top:600px;z-index:-7;
+                }
+                .underphoto,
+                .undera {
+                  display: none;
+                  width: 1px;
+                }
+              }
           </style>
       
 </head>
@@ -64,8 +74,8 @@
 <header>
   <div  class="basket">
     <img class="bask" src=".\images\basket.png" width="50" height="50">
-    <a class="finishbutton" href="#sender"onclick = "changeOpacity()" ><p class="finish"> Завершить заказ</p></a> </div>
-    <aside class="asidewoman">
+    <a class="finishbutton" href="#sender" onclick = "changeOpacity()" ><p class="finish"> Завершить заказ</p></a> </div>
+    <aside style="right:5%;"class="asidewoman">
         <a  href="https://maps.app.goo.gl/HhNe84gCzap5n8RT8">
             <img style="width:20px ; height:20px; padding:5px;" src=".\images\google.jpg" width:20px;height:20px;></a>
             <a href="https://www.instagram.com/opticajekky?igsh=MWx2ZmhuOGZsZ2s4OA">
