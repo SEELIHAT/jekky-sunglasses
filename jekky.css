@@ -148,8 +148,8 @@ div .hop{display:grid; gap:10px;}
 .pas{margin-left:25%;margin-top:3%;border:3px solid red;}
 .tri{ margin-left:25%;margin-top:-40%;border:3px solid red;}
 .dva{margin-left:3%;margin-top:-30%; border:3px solid red;}
-.telega::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; z-index:1000; 
-    transform: translateX(10px);animation-name:translate;animation-duration:15s;}
+.telega::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; 
+    }
 
  h2{color:red; font-style:italic; font-weight: bold;}
    
