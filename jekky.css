@@ -5,7 +5,7 @@
     .pica img:nth-of-type(5){position:absolute;  top: 300px; left:15%; animation-name:translat; animation-duration:  10S; z-index:100;opacity:0;}
      
 .pica img{ width:60px; height:60px; border-radius:50%; border:3px solid yellow; z-index:100;overflow-x: hidden; display:grid;}
-
+.pica{overflow-x:hidden;}
 #carousel-container{ box-shadow :inset -10px -10px 0 0 goldenrod,
                     inset 10px 10px 0 0 goldenrod;}
 @keyframes  transla{
