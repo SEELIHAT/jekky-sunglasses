@@ -8,6 +8,7 @@
 .pica{overflow-x:hidden;}
 #carousel-container{ box-shadow :inset -10px -10px 0 0 goldenrod,
                     inset 10px 10px 0 0 goldenrod;}
+                    body{overflow-x: hidden;}
 @keyframes  transla{
     10% {
         transform:translateX(190px)translateY(10px)scale(0);
@@ -148,16 +149,16 @@ div .hop{display:grid; gap:10px;}
 .pas{margin-left:25%;margin-top:3%;border:3px solid red;}
 .tri{ margin-left:25%;margin-top:-40%;border:3px solid red;}
 .dva{margin-left:3%;margin-top:-30%; border:3px solid red;}
-.telega::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; 
-    }
+/*.telega::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; 
+    }*/
 
  h2{color:red; font-style:italic; font-weight: bold;}
    
 .asidewoman{position:fixed; top:23%; right:20px; width:30px; height:auto; display:grid;gap:10px; border:3px solid red;background-color:none;}
- form::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; z-index:1000; 
+ /*form::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; z-index:1000; 
         transform: translateX(10px);animation-name:translate;animation-duration:15s;}
 .point::before{ margin-top:0px; position:absolute;color:black;font-size:18px; font-weight: bold ; content:"Нажмите на фото, чтобы выбрать ⇘"; z-index:1000; 
-            transform: translateX(10px);animation-name:translate;animation-duration:15s;}
+            transform: translateX(10px);animation-name:translate;animation-duration:15s;}*/
  @keyframes translate{10%{transform:translateX(-10px);} 30%{transform:translateX(130px);} 
         50%{transform:translateX(10px);} 60%{ transform:translateX(150px)} 80%{transform:translateX(20px);}
          100%{transform:translateX(160PX);}} 
