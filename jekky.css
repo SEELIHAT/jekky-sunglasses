@@ -364,3 +364,4 @@ div .hop{display:grid; gap:10px;}
               #photo1{width:280px;height:200px;}
               #photo2{width:280px;height:200px;}
    .soflens{width:280px;height:200px;}
+   #image-container:after{position:absolute; content:"BOOKING ALREADY"; FONT-SIZE:25PX; font-weight: bold;COLOR:RED;}
