@@ -367,4 +367,5 @@ div .hop{display:grid; gap:10px;}
                .gat span{font-weight: bold;color:red; }
                
                .photobar img{width:200px;}
+               .kub{ border-radius:35px 15px 35px 15px;border:5px solid rgb(118, 104, 28);}
   
