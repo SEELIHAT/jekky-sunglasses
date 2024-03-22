@@ -312,8 +312,8 @@ div .hop{display:grid; gap:10px;}
                                .mainprogram li{  height:50px; border: 3px solid white;margin:auto; 
                                 margin:40px;list-style-type: none; border-radius: 15px 15px 15px 15px ; justify-items:center;text-align:center;background-color:rgb(216, 192, 9)}
 
-                               .mainprogram a{ padding:5px;font-size:20px; font-weight: bold; text-align:center;color:rgb(142, 36, 36);
-                                align-items:center;margin-top:20%; }
+                               .mainprogram a{ font-size:20px; font-weight: bold; text-align:center;color:rgb(142, 36, 36);
+                                align-items:center;padding-top:15px; }
                               
             .ras{margin-left:25%;margin-top:3%;border:3px solid red;width:200px;height:200px;overflow: hidden;}
             .dwa{margin-left:3%;margin-top:-30%; border:3px solid red;width:200px;height:200px;overflow: hidden;}
