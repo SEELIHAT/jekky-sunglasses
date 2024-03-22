@@ -311,7 +311,7 @@ div .hop{display:grid; gap:10px;}
                      
                                .mainprogram li{ width:50%; height:40px; border: 3px solid white;margin:auto; 
                                 box-shadow:inset 5px 5px 2px 2px black,
-                            inset -5px -5px 2px 2px black; margin:40px; border-radius: 15px 15px 15px 15px ; justify-items:center;text-align:center;background-color:red;}
+                            inset -5px -5px 2px 2px black; margin:40px;text-decoration: none; border-radius: 15px 15px 15px 15px ; justify-items:center;text-align:center;background-color:red;}
 
                                .mainprogram a{ padding:5px;margin:25px;font-size:20px; font-weight: bold; text-align:center;color:yellow;
                                 margin:auto; }
