@@ -370,4 +370,4 @@ div .hop{display:grid; gap:10px;}
   .sertificat{display:flex;justify-content: center;align-items: center;margin:5px;flex-wrap: wrap;}
   .sertificat img{margin-top:20px;border:7px solid rgb(152, 112, 12);}
   .photobar img{width:250px;height:200px;}
- .hit img{filter:contrast(140%) brightness(60%);}
+ .hit img{filter:contrast(200%) brightness(60%);}
