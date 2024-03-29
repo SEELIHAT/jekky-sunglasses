@@ -371,3 +371,4 @@ div .hop{display:grid; gap:10px;}
   .sertificat img{margin-top:20px;border:7px solid rgb(152, 112, 12);}
   .photobar img{width:250px;height:200px;}
  .hit img{filter:contrast(200%) brightness(100%);}
+ .car::after{content:"2700 рублей";position:absolute; bottom:20px;left:35%;font-size:20px;color:red; z-index:2000;}
