@@ -45,6 +45,24 @@
 <style>#carousel-container{
     box-shadow:inset 10px 10px 0 0 goldenrod,
     inset -10px -10px 0 0 goldenrod;}
+    #carousel-container {
+        margin-top: 30px;
+        width: 300px;
+        overflow: hidden;
+        position: relative;
+        margin: auto;
+        border: 3px solid yellow;
+    }
+
+    #image-container {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-image {filter: contrast(300%) brightness(60%);
+        width: 100%;
+        height: auto;
+    }
    
     .point::before {
         left: 10%;
