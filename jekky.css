@@ -268,7 +268,7 @@ div .hop{display:grid; gap:10px;}
 .img2{width:250px;height:250px; border:1px solid yellow;border-radius:50%;
                                 justify-content:space-around;margin-top:40px;}
 
-
+.hit img{filter: brightness(80%) contrast(300%);}
                                 #carousel-container {
                                     margin-top: 30px;
                                     width: 300px;height:400px;
