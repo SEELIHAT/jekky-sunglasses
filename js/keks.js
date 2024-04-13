@@ -48,7 +48,7 @@
      captionText.innerHTML = dots[slideIndex-1].alt;
    }  
    /*hello*/
-    function selectPhoto(photoNumber) {
+   /* function selectPhoto(photoNumber) {
          var selectedImage = document.getElementById('photo' + photoNumber);
          var isSelected = selectedImage.classList.contains('selected');
         
@@ -60,15 +60,36 @@
            bas.style.display = "none";
          } else {
            selectedImage.classList.add('selected');
-           selectedImage.style.border = '3px solid red';
+           selectedImage.style.border = '8px solid red';
            bas.style.display = "grid";
           
          }
    
          updateSelectedPhotos();
-       }
+       }*/
       
-   
+       function selectPhoto(photoNumber) {
+        var selectedImage = document.getElementById('photo' + photoNumber);
+        var isSelected = selectedImage.classList.contains('selected');
+        let bas = document.querySelector('.basket');
+        let ppAfter = document.querySelector('.pp::after');
+      
+        // Toggle the selected class and border
+        if (isSelected) {
+          selectedImage.classList.remove('selected');
+          selectedImage.style.border = 'none';
+          bas.style.display = "none";
+          ppAfter.style.display = "none"; // Hide .pp::after
+        } else {
+          selectedImage.classList.add('selected');
+          selectedImage.style.border = '8px solid red';
+          bas.style.display = "grid";
+          ppAfter.style.display = "block"; // Show .pp::after
+        }
+      
+        updateSelectedPhotos();
+      }
+      
        function updateSelectedPhotos() {
          var selectedPhotos = document.querySelectorAll('.selected');
          var selectedPhotoNumbers = Array.from(selectedPhotos).map(photo => photo.id.replace('photo', ''));
