@@ -224,7 +224,16 @@ div .hop{display:grid; gap:10px;}
                     .bod { width:50px;
                         display: none; /* Hide the 'bod' class on smaller screens (e.g., phones) */
                     }}
- @media only screen and (min-width: 700px) { .img{margin-top:-10%;} .video-container{margin-top:30%;}
+ @media only screen and (min-width: 700px) { .img{margin-top:-10%;} .video-container{margin-top:30%;} .short-text {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.full-text {
+    display: none;
+}
 }
                     
                     
@@ -370,5 +379,7 @@ div .hop{display:grid; gap:10px;}
   .sertificat{display:flex;justify-content: center;align-items: center;margin:5px;flex-wrap: wrap;}
   .sertificat img{margin-top:20px;border:7px solid rgb(152, 112, 12);}
   .photobar img{width:250px;height:200px;}
+  
+
  
  
