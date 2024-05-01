@@ -381,5 +381,35 @@ div .hop{display:grid; gap:10px;}
   .photobar img{width:250px;height:200px;}
   
 
- 
+  .toggle-input {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.toggle-content {
+    display: none;
+}
+
+.toggle-input:checked ~ .toggle-content {
+    display: block;
+}
+
+.toggle-input:checked + .toggle-label {
+    display: none;
+}
+
+#less-toggle {
+    display: none;
+}
+
+#less-toggle:checked ~ .toggle-content #less-toggle {
+    display: inline-block;
+}
+
  
