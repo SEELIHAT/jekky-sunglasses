@@ -395,7 +395,7 @@ div .hop{display:grid; gap:10px;}
 }
 
 .toggle-content {
-    display: none;
+    display: block;
 }
 
 .toggle-input:checked ~ .toggle-content {
@@ -415,4 +415,4 @@ div .hop{display:grid; gap:10px;}
 }
 
 
- 
+ .bort{display:none;}
