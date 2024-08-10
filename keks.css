@@ -224,10 +224,13 @@ aside{display:grid; gap:10px; color:black;position:fixed;font-style:italic;
    
  .pagesecond{align-self:flex-start;  } 
  .hsec h2{text-align:center;margin-top:110px;text-shadow:2px 2px 1px black;font-size:30px;}
- .psecond p{text-align:center;padding:10px; }
+ .psecond p{text-align:center;padding:10px;font-style: italic;color:#30129e;font-size:18px; }
    
  .try{font-size:15px; opacity:0;}
-   
+   .childspan{color:red; font-style:italic;font-size:18px;font-family: Georgia, serif;}
+  .redspan{border:2px solid red; color:red;}
+   .bluespan{background-color:rgb(85, 85, 238);color:white;border:2px solid rgb(85, 85, 238); border-radius:2px 2px 2px  2px;}
+   #myDiv{display:none;}
    
    .image-containe img:nth-of-type(1){position:absolute;  top: 20px; left:50%; animation-delay:0.3s; animation-name:transla; animation-duration:3s;z-index:-1;opacity:0.5;}
            .image-containe img:nth-of-type(2){position:absolute;  top: 150px; left:15%; animation-delay:0.3s;animation-name:rota; animation-duration:3s;z-index:-1;opacity:0.5;}

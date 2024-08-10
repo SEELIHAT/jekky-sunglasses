@@ -156,6 +156,12 @@
       }
   }
        
- 
+  function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+  }
          
          
