@@ -40,6 +40,7 @@
     document.getElementById('myDiv').style.fontStyle = 'italic';
     document.getElementById('myDiv').style.fontWidth = 'bold';
     document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
   }</script>
     
     <style>
@@ -220,7 +221,7 @@
     <span style="color:red; font-style:italic;font-size:18px;"> Итак, выходите уверенно, придерживайтесь своего стиля и позвольте поляризационным солнцезащитным очкам стать идеальным завершающим штрихом вашего ансамбля.</span>
     
   </p>
-</div><button class="button" onclick="changeDisplay()">Прочитать все</button><div><p><br>
+</div><button class="button" id ="button" onclick="changeDisplay()">Прочитать все</button><div><p><br>
       <h3 id="chose">Инструкция по использованию нашей программы.</h3>
       <br> 1. Вы выбираете очки и нажимаете на фотографию.<br>
       <br>2.Фотография будет иметь красную рамку. Если вы ошиблись, нажмите на фото еще раз и снова выберите другие очки.<br>

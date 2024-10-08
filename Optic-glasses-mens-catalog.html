@@ -31,7 +31,7 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-</head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZNK7MZSMY"></script>
 <script>
@@ -41,6 +41,16 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
+<script>
+  function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
+  }</script>
+  </head>
 <style>
 #carousel-container {margin-top:30px;
             width: 300px;height:300px;
@@ -76,19 +86,8 @@
         #nextBtn {
             right: 5px;
         }
+       </style>
        
-		</style>
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-  }</script>
-
-
-
 <body class="page">
 <header >
   <div  class="basket">
@@ -215,7 +214,7 @@
             Мы можем удовлетворить специальные запросы для людей, расстояние которых превышает 66 см или меньше 60 см. 
            Просто обратитесь к нашим оптикам,<span class="childspan"> и мы поможем вам
              подобрать очки с учетом ваших конкретных потребностей».</span></p>
-            </div><button class="button" onclick="changeDisplay()">Прочитать все</button><div><p>
+            </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button><div><p>
              <h3 id="chose">Инструкция по использованию нашей программы.</h3>
              <br> 1. Вы выбираете очки и нажимаете на фотографию.<br>
              <br>2.Фотография будет иметь красную рамку. Если вы ошиблись, нажмите на фото еще раз и снова выберите другие очки.<br>

@@ -50,7 +50,7 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
-</head>
+
 <script>
     function changeDisplay() {
       document.getElementById('myDiv').style.display = 'grid';
@@ -58,7 +58,10 @@
       document.getElementById('myDiv').style.fontStyle = 'italic';
       document.getElementById('myDiv').style.fontWidth = 'bold';
       document.getElementById('myDiv').style.fontSize = '20'+'px';
+      document.getElementById('button').style.display = 'none';
     }</script>
+</head>
+
 <style>
 #carousel-container{
     box-shadow:inset 10px 10px 0 0 goldenrod,
@@ -213,7 +216,7 @@
                    Выбирая очки для своего ребенка, вы заботитесь о его зрении и помогаете ему быть стильным и защищенным каждый день.
                   
                   </p>
-                  </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
+                  </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button>
                     <p><h3 id="chose">Инструкция по использованию нашей программы.</h3>
                     <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
                     <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>

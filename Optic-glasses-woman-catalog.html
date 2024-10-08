@@ -41,6 +41,15 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
+<script>
+  function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
+  }</script>
 </head>
 <style>
 #carousel-container {margin-top:30px;
@@ -79,14 +88,7 @@
         }
        
 		</style>
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-  }</script>
+
 
 
 
@@ -214,7 +216,7 @@
        но и отражать ваш индивидуальный стиль».
 
       </p>
-    </div><button class="button" onclick="changeDisplay()">Прочитать все</button><div>
+    </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button><div>
        <h3 id="chose">Инструкция по использованию нашей программы.</h3>
        <br> 1. Вы выбираете очки и нажимаете на фотографию.<br>
        <br>2.Фотография будет иметь красную рамку. Если вы ошиблись, нажмите на фото еще раз и снова выберите другие очки.<br>

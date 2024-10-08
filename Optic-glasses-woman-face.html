@@ -42,24 +42,7 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
-<style>
-   #carousel-container{
-    box-shadow:inset 10px 10px 0 0 goldenrod,
-    inset -10px -10px 0 0 goldenrod;}
 
-    .point::before {
-        left: 10%;
-        position: absolute;
-        color: black;
-        font-size: 18px;
-        font-weight: bold;
-        content: "Заполните форму адреса и телефон: ⇘";
-        z-index: 1000;
-        transform: translateX(10px);
-        animation-name: translate;
-        animation-duration: 15s;
-    }
-</style>
 <script>
     function changeDisplay() {
       document.getElementById('myDiv').style.display = 'grid';
@@ -67,6 +50,7 @@
       document.getElementById('myDiv').style.fontStyle = 'italic';
       document.getElementById('myDiv').style.fontWidth = 'bold';
       document.getElementById('myDiv').style.fontSize = '20'+'px';
+      document.getElementById('button').style.display = 'none';
     }</script>
 </head>
 
@@ -229,7 +213,7 @@
                 Готовые оптические  очки — это практичный выбор для тех, кто ценит удобство и быстроту. 
                
             </p>
-                </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
+                </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button>
                      <h3 id="chose">Инструкция по использованию нашей программы.</h3>
                      <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
                      <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>

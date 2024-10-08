@@ -41,6 +41,16 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
+<script>
+  function changeDisplay() {
+    document.getElementById('myDiv').style.display = 'grid';
+    document.getElementById('myDiv').style.color = 'yellow';
+    document.getElementById('myDiv').style.fontStyle = 'italic';
+    document.getElementById('myDiv').style.fontWidth = 'bold';
+    document.getElementById('myDiv').style.fontSize = '20'+'px';
+    document.getElementById('button').style.display = 'none';
+  }</script>
+  </head>
 <style>
 #carousel-container {margin-top:30px;
             width: 300px;height:300px;
@@ -79,14 +89,7 @@
        
 		</style>
 
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-  }</script>
+
 
 
 <body class="page">
@@ -217,7 +220,7 @@
     
     Подчеркните доступность ваших очков. Подчеркните, что качество не обязательно должно сопровождаться высокой ценой, 
     что делает их отличным выбором для широкого круга пользователей.</p>
-  </div><button class="button" onclick="changeDisplay()">Прочитать все</button><div><p>
+  </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button><div><p>
    
     <br><br>
       <h3 id="chose">Инструкция по использованию нашей программы.</h3>

@@ -49,88 +49,13 @@
       document.getElementById('myDiv').style.fontStyle = 'italic';
       document.getElementById('myDiv').style.fontWidth = 'bold';
       document.getElementById('myDiv').style.fontSize = '20'+'px';
+      document.getElementById('button').style.display = 'none';
     }</script>
 </head>
-<style>
-    #carousel-container{
-     box-shadow:inset 10px 10px 0 0 goldenrod,
-     inset -10px -10px 0 0 goldenrod;}
- 
-     .point::before {
-         left: 10%;
-         position: absolute;
-         color: black;
-         font-size: 18px;
-         font-weight: bold;
-         content: "Заполните форму адреса и телефон: ⇘";
-         z-index: 1000;
-         transform: translateX(10px);
-         animation-name: translate;
-         animation-duration: 15s;
-     }
-</style>
-<style>#carousel-container{
-    box-shadow:inset 10px 10px 0 0 goldenrod,
-    inset -10px -10px 0 0 goldenrod;}
-    #carousel-container {
-        margin-top: 30px;
-        width: 300px;
-       
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        border: 3px solid yellow;
-    }
-
-    #image-container {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-
-    .carousel-image {
-        width: 100%;
-        height: auto;
-    }
-
-    #prevBtn,
-    #nextBtn {padding-top:10px;
-        padding-bottom: 10px;;
-        position: absolute;
-        top: 90%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        border: 3px solid yellow;
-        font-size: 15px;
-    }
-
-    #prevBtn {
-        left: 5px;
-    }
-
-    #nextBtn {
-        right: 5px;
-    }
-
-    .point::before {
-        left: 10%;
-        position: absolute;
-        color: black;
-        font-size: 18px;
-        font-weight: bold;
-        content: "Заполните форму адреса и телефон: ⇘";
-        z-index: 1000;
-        transform: translateX(10px);
-        animation-name: translate;
-        animation-duration: 15s;
-    }
-</style>
 
 
 
-
-
-
-<body class="page">
+ <body class="page">
     <header>
         <div class="basket">
             <img class="bask" src=".\images\basket.png" width="50" height="50">
@@ -267,7 +192,7 @@
                   
                   
               </p>
-                  </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
+                  </div><button class="button" id="button" onclick="changeDisplay()">Прочитать все</button>
                     <h3 id="chose">Инструкция по использованию нашей программы.</h3>
                     <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
                     <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>
