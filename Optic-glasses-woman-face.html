@@ -33,6 +33,41 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZNK7MZSMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZNK7MZSMY');
+</script>
+<style>
+   #carousel-container{
+    box-shadow:inset 10px 10px 0 0 goldenrod,
+    inset -10px -10px 0 0 goldenrod;}
+
+    .point::before {
+        left: 10%;
+        position: absolute;
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        content: "Заполните форму адреса и телефон: ⇘";
+        z-index: 1000;
+        transform: translateX(10px);
+        animation-name: translate;
+        animation-duration: 15s;
+    }
+</style>
+<script>
+    function changeDisplay() {
+      document.getElementById('myDiv').style.display = 'grid';
+      document.getElementById('myDiv').style.color = 'yellow';
+      document.getElementById('myDiv').style.fontStyle = 'italic';
+      document.getElementById('myDiv').style.fontWidth = 'bold';
+      document.getElementById('myDiv').style.fontSize = '20'+'px';
+    }</script>
 </head>
 
 <style>
@@ -55,82 +90,6 @@
 
    
 </style>
-<script>
-
-
-
-
-
-
-
-/*document.getElementById('messageForm').addEventListener('submit', async function(event) {
-    event.preventDefault();
-    
-    const message = document.getElementById('message').value;
-    
-    try {
-      const response = await fetch('/send-message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ message })
-      });
-  
-      if (response.ok) {
-        alert('Message sent successfully!');
-      } else {
-        alert('Failed to send message. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again later.');
-    }
-  });
-
-  const express = require('express');
-const bodyParser = require('body-parser');
-const fetch = require('node-fetch');
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-const TELEGRAM-BOT-TOKEN = '1853263347:AAHYmdm12ynxa-0l-2MmnmFzVIdNpPdX0Y4';
-const TELEGRAM-CHANNEL-ID = '+1OGg0Nllj5kzZjJi';
-
-app.use(bodyParser.json());
-
-app.post('/send-message', async (req, res) => {
-  const { message } = req.body;
-
-  try {
-    const response = await fetch(`https://api.telegram.org/bot${'1853263347:AAHYmdm12ynxa-0l-2MmnmFzVIdNpPdX0Y4'}/sendMessage`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        chat-id: '+1OGg0Nllj5kzZjJi',
-        text: message
-      })
-    });
-    if (response.ok) {
-      res.sendStatus(300);
-    } else {
-      res.status(500).send('Failed to send message to Telegram.');
-    }
-  } catch (error) {
-    console.error('Error sending message to Telegram:', error);
-    res.status(500).send('Failed to send message to Telegram.');
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});*/
-
-
-
-  </script>
 
 
 
@@ -240,13 +199,37 @@ app.listen(PORT, () => {
                 <h2 class="animate">&nbsp;&nbsp;Программа для выбора  женщин  оптических очков  на лице .</h2>
             </div>
             <div class="psecond">
-                <p>&nbsp;<span style="color:red; font-style:italic;font-size:18px;">"Ваше видение, ваше соответствие":</span> 
-
-                    Руководство по покупке индивидуальных оптических очков в нашем магазине "Jekky" мы понимаем, что нет двух одинаковых людей,
-                     и это включает в себя уникальные размеры ваших глаз. достижение оптимального
-                     комфорта а четкость зрения — это межзрачковое расстояние (IPD). 
-                     Это расстояние между центрами ваших зрачков, и оно варьируется от человека к человеку.
-                     В нашем магазине вы всегда сможете проверить солнцезащитные очки и узнать своe межзрачковое расстояние (IPD)и очкo в, что  вы хотите купить.
+              <div id="text-container">
+                  <p id="text-preview"><span style="color:red;font-size:22px;">Женские оптические очки</span>
+                        представляют собой не только функциональный аксессуар, но и стильный элемент повседневного образа.
+                        Они сочетают в себе элегантность и практичность, делая акцент на индивидуальный стиль и комфорт.
+                
+                      </p>
+                    </div>
+                    <div class="textMore"id="myDiv"><p class="tree"> <span class="childspan">Оптимальное зрение::</span><br>
+                      Готовые очки с оптикой обеспечивают четкость зрения и позволяют хранить их с различными нарушениями рефракции.
+                       Линзы эти очки созданы для комфортного использования и снижения нагрузки на глаза, что особенно важно при длительной работе за компьютером или в чт.  
+                       <br><span class="childspan">Разнообразие выбора:</span><br>
+                       Очки доступны в разных вариантах диоптрий, что позволяет выбрать оптимальную модель для корректировки близорукости или дальнозоркости. 
+                       Готовые оптические очки — это универсальное решение для тех, кто ищет наушники и запасные аксессуары к привычным корректирующим очкам.
+                
+                <br><span class="childspan">Комфорт и удобство: </span><br>
+                Готовые оптические очки сочетают в себе практичность и стиль. Вы можете выбрать очки различных форм и расцветок,
+                 которые дополняют ваш образ и подчеркивают индивидуальность. От классики до современного направления — каждый находит что-то по вкусу
+                <br><span class="childspan">Защита и активный образ жизни:</span><br>
+                Многие модели готовых очков оснащены линзами с защитой от ультрафиолета и синего света, что особенно полезно для тех,
+                 кто много времени проводит за экраном компьютера или смартфона.
+                 Такие очки отлично подходят не только для повседневного ношения, но и для активного отдыха на улице.
+                
+                <br><span class="childspan">Когда выбираете готовые очки с оптикой:</span><br>
+                Если вы заметили необходимость обновить взгляд или просто хотите свою оптику, готовые очки — это быстрое и простое решение.
+                 Благодаря широкому ассортименту и доступным ценам, вы можете выбрать подходящую модель без длительного ожидания.
+                
+                <br><span class="childspan">Заключение:</span><br>
+                Готовые оптические  очки — это практичный выбор для тех, кто ценит удобство и быстроту. 
+               
+            </p>
+                </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
                      <h3 id="chose">Инструкция по использованию нашей программы.</h3>
                      <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
                      <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>

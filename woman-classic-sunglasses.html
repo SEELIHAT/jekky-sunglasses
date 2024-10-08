@@ -33,66 +33,45 @@
  </script>
  <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
  <!-- /Yandex.Metrika counter -->
-</head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZNK7MZSMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YZNK7MZSMY');
+</script>
+
+<script>
+    function changeDisplay() {
+      document.getElementById('myDiv').style.display = 'grid';
+      document.getElementById('myDiv').style.color = 'yellow';
+      document.getElementById('myDiv').style.fontStyle = 'italic';
+      document.getElementById('myDiv').style.fontWidth = 'bold';
+      document.getElementById('myDiv').style.fontSize = '20'+'px';
+    }</script>
+
+</head>
 <style>
     #carousel-container{
-    box-shadow:inset 10px 10px 0 0 goldenrod,
-    inset -10px -10px 0 0 goldenrod;}
-    #carousel-container {
-        margin-top: 30px;
-        width: 300px;
-        overflow: hidden;
-        position: relative;
-        margin: auto;
-        border: 3px solid yellow;
-    }
-
-    #image-container {
-        display: flex;
-        transition: transform 0.5s ease;
-    }
-
-    .carousel-image {
-        width: 100%;
-        height: auto;
-    }
-
-    #prevBtn,
-    #nextBtn {padding-top:10px;
-        padding-bottom: 10px;;
-        position: absolute;
-        top: 90%;
-        transform: translateY(-50%);
-        cursor: pointer;
-        border: 3px solid yellow;
-        font-size: 15px;
-    }
-
-    #prevBtn {
-        left: 5px;
-    }
-
-    #nextBtn {
-        right: 5px;
-    }
-
-    .point::before {
-        left: 10%;
-        position: absolute;
-        color: black;
-        font-size: 18px;
-        font-weight: bold;
-        content: "Заполните форму адреса и телефон: ⇘";
-        z-index: 1000;
-        transform: translateX(10px);
-        animation-name: translate;
-        animation-duration: 15s;
-    }
-    
-    
-</style>
-
+     box-shadow:inset 10px 10px 0 0 goldenrod,
+     inset -10px -10px 0 0 goldenrod;}
+ 
+     .point::before {
+         left: 10%;
+         position: absolute;
+         color: black;
+         font-size: 18px;
+         font-weight: bold;
+         content: "Заполните форму адреса и телефон: ⇘";
+         z-index: 1000;
+         transform: translateX(10px);
+         animation-name: translate;
+         animation-duration: 15s;
+     }
+ </style>
 
 
 
@@ -200,11 +179,34 @@
                     очков на лице .</h2>
             </div>
             <div class="psecond">
-                <p>&nbsp;Новое определение элегантности: вневременное очарование
-                    классических женских солнцезащитных очков В постоянно развивающемся мире моды
-                    некоторые аксессуары выдерживают испытание временем, легко превосходя тенденции и времена года.
-                    Классические женские солнцезащитные очки, неподвластные времени, являются настоящим свидетельством
-                    непреходящей элегантности.
+                <div id="text-container">
+                    <p id="text-preview"><span style="color:red;font-size:22px;">Женские классические солнцезащитные очки</span>
+                       - это сочетание элегантности и утонченного стиля. Эти очки никогда не выходят из моды, предлагая универсальные формы и оттенки,
+                         которые идеально дополняют любой образ, 
+                        от повседневного до официального. Круглые, квадратные, кошачий глаз — каждая форма придает женскому образу особый шарм.
+                  
+                        </p>
+                      </div>
+                      <div class="textMore"id="myDiv"><p class="tree"> <span class="childspan">Защита от солнца:</span><br>
+                        Классические женские солнцезащитные очки не только стильные, но и функциональные.
+                         Линзы высокого качества блокируют вредные ультрафиолетовые лучи (UVA и UVB),
+                         защищая глаза от негативного воздействия солнечного света и предотвращая преждевременное старение кожи вокруг глаз.
+                  
+                         <br><span class="childspan">Комфорт и удобство:</span><br>
+                         Эти очки созданы для того, чтобы обеспечивать максимальный комфорт при ношении.
+                          Легкие материалы, такие как ацетат или пластик, гарантируют, что очки не будут давить на переносицу или уши, даже если вы носите их весь день.
+                  
+                  <br><span class="childspan">Элегантность и универсальность: </span><br>
+                  Женские классические солнцезащитные очки подходят под любой наряд, будь то летнее платье, деловой костюм или повседневный городской стиль.
+                   Их можно носить как на отдыхе, так и в городе, они всегда добавят нотку элегантности и уверенности в образ.
+                  
+                  <br><span class="childspan">Когда выбрать классические очки:</span><br>
+                  Если вы ищете стильный аксессуар, который будет сочетаться с любым гардеробом и обеспечит вам надежную защиту от солнца, женские классические солнцезащитные очки — это идеальный выбор.
+                   Это аксессуар, который подчеркнет вашу индивидуальность и придаст уверенности в любой ситуации.
+                  
+                 
+              </p>
+                  </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
                     <h3 id="chose">Инструкция по использованию нашей программы.</h3>
                     <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
                     <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>

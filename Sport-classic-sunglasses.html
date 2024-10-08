@@ -34,8 +34,43 @@
  </script>
  <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
  <!-- /Yandex.Metrika counter -->
-</head>
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZNK7MZSMY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-YZNK7MZSMY');
+</script>
+
+<script>
+    function changeDisplay() {
+      document.getElementById('myDiv').style.display = 'grid';
+      document.getElementById('myDiv').style.color = 'yellow';
+      document.getElementById('myDiv').style.fontStyle = 'italic';
+      document.getElementById('myDiv').style.fontWidth = 'bold';
+      document.getElementById('myDiv').style.fontSize = '20'+'px';
+    }</script>
+</head>
+<style>
+    #carousel-container{
+     box-shadow:inset 10px 10px 0 0 goldenrod,
+     inset -10px -10px 0 0 goldenrod;}
+ 
+     .point::before {
+         left: 10%;
+         position: absolute;
+         color: black;
+         font-size: 18px;
+         font-weight: bold;
+         content: "Заполните форму адреса и телефон: ⇘";
+         z-index: 1000;
+         transform: translateX(10px);
+         animation-name: translate;
+         animation-duration: 15s;
+     }
+ </style>
 <style>
     #carousel-container{
     box-shadow:inset 10px 10px 0 0 goldenrod,
@@ -198,12 +233,31 @@
                 <h2 class="animate">&nbsp;&nbsp;Программа для выбора Спортивныx  солнцезащитныx 
                     очков на лице .</h2>
             </div>
-            <div style = "font-size: 18px;"psecond"><span class="spanduo">Защита вашего зрения</span><br>
-
-                &nbsp;&nbsp;&nbsp;Исследуете ли вы глубины океана или покоряете вершины Камчатки, воздействие вредных ультрафиолетовых (УФ) лучей неизбежно.&nbsp;&nbsp; Спортивные солнцезащитные очки с защитой от ультрафиолета действуют как мощный барьер, защищая ваши глаза от вредных солнечных лучей. Это не только защитит ваше зрение,
-                 но и предотвратит потенциальный долгосрочный ущерб.
-                
-                <br><span style="color:red;font-size:18px;">Уменьшение бликов. Улучшение фокусировки. </span><br>
+            <div class="psecond">
+                <div id="text-container">
+                    <p id="text-preview"><span style="color:red;font-size:22px;">Спортивные солнцезащитные очки: защита и комфорт для активных людей</span>
+                         —  это специализированные очки, разработанные для защиты глаз и улучшения зрительного восприятия во время активных занятий спортом.
+                          Они обеспечивают защиту от ультрафиолетовых лучей, устойчивы к ударам и царапинам, а также имеют эргономичный дизайн для комфортного ношения 
+                          даже при интенсивных движениях. 
+                         Спортивные очки часто оснащены поляризованными линзами для уменьшения бликов и улучшения видимости при ярком солнечном свете или отражениях от
+                          воды и снега.
+                  
+                        </p>
+                      </div>
+                      <div class="textMore"id="myDiv"><p class="tree"> <span class="childspan">Максимальная защита:</span><br>
+                        Спортивные солнцезащитные очки созданы для того, чтобы обеспечить надежную защиту глаз от вредного ультрафиолетового излучения. 
+                        Линзы блокируют 100% лучи UVA и UVB, что делает их исправленными для активного отдыха на открытом воздухе в солнечных лучах.
+                  
+                         <br><span class="childspan">Разнообразие применения:</span><br>
+                         Спортивные солнцезащитные очки подходят для разных видов активности — от бега и езды на велосипеде до горных походов и водных видов спорта.
+                          Некоторые модели имеют поляризованные линзы, которые уменьшают блики от воды и снега, улучшают видимость и стабильность.
+                  
+                  <br><span class="childspan">Когда выбирают спортивные очки: </span><br>
+                  Если вы активно занимаетесь спортом на улице или просто ведете активный образ жизни на улице, спортивные солнцезащитные очки — это незаменимый аксессуар.
+                  
+                  
+              </p>
+                  </div><button class="button" onclick="changeDisplay()">Прочитать все</button>
                 <p>&nbsp;
                     <h3 id="chose">Инструкция по использованию нашей программы.</h3>
                     <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
