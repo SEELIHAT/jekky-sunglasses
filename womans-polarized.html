@@ -42,23 +42,7 @@
     document.getElementById('myDiv').style.fontSize = '20'+'px';
     document.getElementById('button').style.display = 'none';
   }</script>
-  <script> function sendMessageToWhatsApp(phoneNumber, imgId) {
-    var message = "Hello, I would like to order.";
   
-    // Get the text content from the specified <p> element
-    var additionalMessage = document.getElementById(imgId);
-  
-    // Append the additional message to the main message
-    message += " " + additionalMessage;
-  
-    // Replace spaces with %20 for URL
-    message = encodeURIComponent(message);
-  
-    var url = "https://wa.me/" + phoneNumber  + message;
-  
-    window.open(url, '_blank');
-  }
-</script>
     
     <style>
       #carousel-container {margin-top:30px;
@@ -291,10 +275,7 @@
         <img id="photo904" src=".\images\WA (8).jpg" onclick="selectPhoto(904)">
         <div class="gat" ><span id="price904">Женские поляризационные<br> очки #03771C7<br>Цена: 1350 руб.</span></div>
       </div>
-      <div>
-      <img class="carousel-image" id="photo7002" src=".\images\vf4001 (23).png" alt="Image 7002"
-      onclick="sendMessageToWhatsApp('+79315908599', 'order2')"><p id="order2">Order: Women's Polarized Sunglasses</p>
-    </div> 
+     
     <div>
         <img id="photo906" src=".\images\WA (12).jpg" onclick="selectPhoto(906)">
         <div class="gat"><span id="price906">Женские поляризационные<br> очки #03817C7 <br>Цена: 1350 руб.</span></div>
