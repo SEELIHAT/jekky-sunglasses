@@ -81,6 +81,7 @@ body {
  .svg{ right:7px; position:absolute; top:20px; }
  .svg img{ border:3px solid red;
         border-radius:50%;}
+        .redcolor{font-weight:bold;color:rgb(120, 113, 23);font-size:20px;}
 .button{ text-decoration: none;
   
     border: 3px solid rgb(125, 22, 22);
