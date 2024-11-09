@@ -212,7 +212,7 @@ div .hop{display:grid; gap:10px;}
 .dropdown:hover .dropdown-content {
               display: grid;
             }
-.photobar{display:flex;flex-wrap:wrap; padding:10px; justify-content: center;;}
+.photobar{display:flex;flex-wrap:wrap; padding:10px; justify-content: center;margin:20px;}
             form img{width:140px;height:auto;margin:auto; padding:20px;}
             
                      
@@ -438,5 +438,5 @@ div .hop{display:grid; gap:10px;}
   .newbutton{font-size:15px; text-align: center;font-style: italic;color:rgb(143, 38, 38);font-weight: bold;}
   .newbut{font-size:15px; text-align: center;font-style: italic;color:rgb(143, 38, 38);font-weight: bold;}
   .mainbottom{display:flex; justify-content:center; margin:auto; overflow:hidden;margin-top:50px;}
- .sectionyellow{background-color:gold;}
+ .sectionyellow{background-color:gold;margin:-10px;}
  #mois{text-align: center;font-size:25px;font-style: italic;font-weight: bold; color:black;}
