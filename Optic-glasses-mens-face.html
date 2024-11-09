@@ -216,26 +216,44 @@
                    такие очки могут стать отличным помощником в повседневной жизни, предлагая мгновенное решение для коррекции зрения.
               </p>
                   </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button>
-                     <h3 id="chose">Инструкция по использованию нашей программы.</h3>
-                     <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
-                     <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>
-                     <br><span class="spanduo">3.Нажмите на кнопку <span>В центр</span> для того, чтобы уменьшить  и отцентровать фото .</span><br>
-                     <br><span class="spanduo">4.Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;
-                     <span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.</span><br>
-                     <br><span class="spanduo">5. Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . </span><br>
-                     <br><span class="spanduo"> 6. Кликните на фото ,если очки вам понравились .Далее кликните на текст  [Завершить заказ]  заполните форму и  вы пишете число диоптирий (-1...?)(+1...?)шаг0.25.   </span><br>
-                     <br><span class="spanduo">7.Номер телефона, адрес и лучшее время для получения заказа.</span><br>
-                     <br><span class="spanduo">8.После того ,как вы нажмёте [ Отправить заказ] вы переходите в почту и проверяете заказ ,если надо дополняете нужной информацией.</span><br>
-                     <br><span class="spanduo">9.И отправив письмо, вы услышите наш звонок через 15 минут.</span><br>
-                     <br><span class="spanduo">10.Хорошего дня и удачных покупок.</span><br>
-                    
-
-
-                </p>
+                     
             </div>
         </section>
+        <h3 id="mois">Инструкция по использованию нашей программы.</h3>
+  
 
-        <main style="display:flex; justify-content:center; margin:auto; overflow:hidden;">
+
+
+        <section>
+          <div class="newenttrens">
+            <div class="tv">
+              <img class="tvset" src="./images/womanwatchtv.webp">
+              <button class="newbut"><a href=".\images\choose in catalog.jpg">Нажмите для просмотра</a></button>
+            </div>
+            <div class="book">
+              <img class="tvset" src="./images/mansreadbook.webp">
+              <button class="newbutton" id="reading">Нажмите,<br> чтобы прочитать</button>
+            </div>
+          </div>
+          <p class="notsee" id="readText">
+            <br> <span class="spanduo">1.Сначала вы нажимаете кнопку сверху и слева <span>Выбрать файл</span>.В форме под текстом</span><br>
+                         <br><span class="spanduo">2.Вы выбираете лучшую фотографию в телефоне или компьютере. И открываете эту фотографию.</span><br>
+                         <br><span class="spanduo">3.Нажмите на кнопку <span>В центр</span> для того, чтобы уменьшить  и отцентровать фото .</span><br>
+                         <br><span class="spanduo">4.Подстройте своё фото под рамку соответсвующего размера головы нажимая кнопки расположенные под фотографией<br> <span>Больше </span>&nbsp;<span>Меньше </span>&nbsp;<span>Право</span>&nbsp; <span>Лево</span>&nbsp; <span>Ниже</span>&nbsp;<span>Выше</span>&nbsp;.</span><br>
+                         <br><span class="spanduo">5. Далее нажимайте <span>Слудущий</span> или <span>Преведущий</span>,чтобы подобрать очки нужного размера и фассона . </span><br>
+                         <br><span class="spanduo"> 6. Кликните на фото ,если очки вам понравились .Далее кликните на текст  [Завершить заказ] и заполните форму.  </span><br>
+                         <br><span class="spanduo">7.Номер телефона, адрес и лучшее время для получения заказа.</span><br>
+                         <br><span class="spanduo">8.После того ,как вы нажмёте [ Отправить заказ] вы переходите в почту и проверяете заказ ,если надо дополняете нужной информацией.</span><br>
+                         <br><span class="spanduo">9.И отправив письмо, вы услышите наш звонок .</span><br>
+                         <br><span class="spanduo">10.Хорошего дня и удачных покупок.</span><br>
+          </p>
+        </section>
+        <script>let laja = document.querySelector('.newbutton');
+        laja.onclick = function() {
+          let not = document.querySelector('.notsee');
+          not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
+        };</script>
+        <main class="mainbottom">
             <div class="bodi">
                 <img class="ras"  src=".\images\boy.png"
                 >

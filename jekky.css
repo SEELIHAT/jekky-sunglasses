@@ -423,3 +423,18 @@ div .hop{display:grid; gap:10px;}
     justify-content:center;}
  .bort{display:none;}
  .separeit{text-decoration: underline;}
+ 
+
+ .tv{display:grid;width:220px;height:auto;border:3px solid rgb(75, 66, 14);}
+ .book{display:grid;width:220px;height:auto;border:3px solid rgb(75, 66, 14);}
+ .newenttrens{display:flex;justify-content:space-around;margin:auto;flex-wrap: wrap;}
+ .tvset{width:220px;height:auto;}
+ .notsee{display:none;}
+
+.newtextbutton {text-align: center; font-weight:bold;font-size:15px;color:rgb(63, 55, 10);font-family: 'Lucida Sans', sans-serif;
+    display: block;margin-top: 30px;
+  }
+  .mois{text-align: center;font-size:25px;font-style: italic;font-weight: bold; color:black;}
+  .newbutton{font-size:15px; text-align: center;font-style: italic;color:rgb(143, 38, 38);font-weight: bold;}
+  .newbut{font-size:15px; text-align: center;font-style: italic;color:rgb(143, 38, 38);font-weight: bold;}
+  .mainbottom{display:flex; justify-content:center; margin:auto; overflow:hidden;margin-top:50px;}
