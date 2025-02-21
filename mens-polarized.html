@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
 	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
+<script src="newstyle.js" defer></script>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -32,15 +31,7 @@
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-    document.getElementById('button').style.display = 'none';
-  }</script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZNK7MZSMY"></script>
@@ -53,42 +44,29 @@
 </script>
 </head>
 <style>
-#carousel-container {margin-top:30px;
-            width: 300px;height:300px;
-            overflow: hidden;
-            position: relative;
-            margin: auto;
-			border:3px solid yellow;
-        }
+  #carousel-container {
+margin-top: 30px;
+width: 300px;
+height: 300px;
+overflow: hidden;
+position: relative;
+margin: auto;
+border: 3px solid yellow;
+}
 
-        #image-container {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+#image-container {
+display: flex;
+width: 100%; /* Adjust width based on the number of images */
+transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-image {
-            width: 100%;
-            height: auto;
-        }
+.carousel-image {
+width: 300px;
+height: 300px;
+flex-shrink: 0; /* Prevents images from shrinking */
+}
 
-        #prevBtn, #nextBtn {
-             position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            cursor: pointer;
-			border:3px solid yellow;
-			font-size:15px;
-        }
-
-        #prevBtn {
-            left: 5px;
-        }
-
-        #nextBtn {
-            right: 5px;
-        }
-       
-		</style>
+      </style>
 
 
 
@@ -97,7 +75,7 @@
 <header >
   <div  class="basket">
     <img class="bask" src=".\images\basket.png" width="50" height="50">
-    <a class="finishbutton" href="#sender"onclick = "changeOpacity()" > <p class="finish"> Завершить заказ<br>
+    <a class="finishbutton" href="#sender"onclick = "changeOpacity() > <p class="finish"> Завершить заказ<br>
       <span style="font-size:10px; color :red;">
       Выбор уже сделан или нажмите на фото еще раз, чтобы выбрать еще раз.</span></p></a> </div>
     <aside class="asidewoman">
@@ -106,10 +84,10 @@
             <a href="https://yandex.ru/maps/-/CDRUnE1z">
                  <img style="width:20px ; height:20px; padding:5px;" src=".\images\yandex map.png" width:20px;height:20px;>
                 </a>
-        <a  href="https://wa.me/+79622923791">
+        <a  href="https://wa.me/+79315908599">
          <img style="width:20px ; height:20px; padding:5px; " src=".\images\wats.jpg"
           width:20px;height:20px;></a>
-       <a  href="tel:+79622923791"> <img style="width:20px ; height:20px; padding:5px;" src="images\phone.jpg"
+       <a  href="tel:+79315908599"> <img style="width:20px ; height:20px; padding:5px;" src="images\phone.jpg"
          width:20px;height:20px;></a>
     </aside>
     <div class="underpage">
@@ -261,413 +239,377 @@ Mужские поляризационные солнцезащитные очк
    <br>8.Хорошего дня и удачных покупок.<br> 
      </p>
    
-   <script>let laja = document.querySelector('.newbutton');
-   laja.onclick = function() {
-     let not = document.querySelector('.notsee');
-     not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-   };</script><div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
+   <div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
     
-
-
-    
-    
-
-
-    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
-     <div class="photobar">
+ <div class="photobar">
+  
       <div>
-        <img  id="photo1" src=".\images\Image102.png" onclick="selectPhoto(1)">
-        <div class="gat"><span id="price1">Цена: 2700 руб.<br>MJ0815</span></div>
+        <img  id="photo1" src=".\images\Image102.png">
+        <div class="gat"><span id="price1">MJ0815<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp (1)">заказать</button>
       </div>
       <div>
-        <img id="photo2" src=".\images\Image105.png" onclick="selectPhoto(2)">
-        <div class="gat"><span id="price2">Цена: 2700 руб.<br>MJ0825</span></div>
+        <img id="photo2" src=".\images\Image105.png">
+        <div class="gat"><span id="price2">MJ0825<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(2)">заказать</button>
       </div>
 	  <div>
-        <img id="photo3" src=".\images\Image107.png" onclick="selectPhoto(3)">
-        <div class="gat"><span id="price3">Цена: 2700 руб.<br>TR9041</span></div>
+        <img id="photo3" src=".\images\Image107.png">
+        <div class="gat"><span id="price3">TR9041<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(3)">заказать</button>
       </div>
 	  
 	  <div>
-        <img id="photo4" src=".\images\Image111.png" onclick="selectPhoto(4)">
-        <div class="gat"><span id="price4">Цена: 2700 руб.<br>MJ0804</span></div>
+        <img id="photo4" src=".\images\Image111.png" >
+        <div class="gat"><span id="price4">MJ0804<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(4)">заказать</button>
       </div>
       <div>
-        <img id="photo5" src=".\images\Image113.png" onclick="selectPhoto(5)">
-        <div class="gat"><span id="price5">Цена: 2700 руб.<br>MJ0821</span></div>
+        <img id="photo5" src=".\images\Image113.png" (5)>
+        <div class="gat"><span id="price5">MJ0821<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(5)">заказать</button>
       </div>
       <div>
-        <img id="photo6" src=".\images\Image115.png" onclick="selectPhoto(6)">
-        <div class="gat"><span id="price6">Цена: 2700 руб.<br>MJ0822</span></div>
+        <img id="photo6" src=".\images\Image115.png" (6)>
+        <div class="gat"><span id="price6">MJ0822<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(6)">заказать</button>
       </div>
        <div>
-        <img  id="photo7" src=".\images\Image117.png" onclick="selectPhoto(7)">
-        <div class="gat"><span id="price7">Цена: 2700 руб.<br>MJ0819</span></div>
+        <img  id="photo7" src=".\images\Image117.png" (7)>
+        <div class="gat"><span id="price7">MJ0819<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(7)">заказать</button>
       </div>
       <div>
-        <img id="photo8" src=".\images\Image119.png" onclick="selectPhoto(8)">
-        <div class="gat"><span id="price8">Цена: 2700 руб.<br>MJ0829</span></div>
+        <img id="photo8" src=".\images\Image119.png" (8)>
+        <div class="gat"><span id="price8">MJ0829<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(8)">заказать</button>
       </div>
 	 
 	  <div>
-        <img id="photo9" src=".\images\Image151.png" onclick="selectPhoto(9)">
-        <div class="gat"><span id="price9">Цена: 2700 руб.<br>TR9041</span></div>
+        <img id="photo9" src=".\images\Image151.png" (9)>
+        <div class="gat"><span id="price9">TR9041<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(9)">заказать</button>
       </div>
 	 
       <div>
-        <img id="photo10" src=".\images\Image153.png" onclick="selectPhoto(10)">
-        <div class="gat" ><span id="price10">Цена: 2700 руб.<br>TR9505</span></div>
+        <img id="photo10" src=".\images\Image153.png" (10)>
+        <div class="gat" ><span id="price10">TR9505<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(10)">заказать</button>
       </div>
       <div>
-        <img id="photo11" src=".\images\Image154.png" onclick="selectPhoto(11)">
-        <div class="gat" ><span id="price11">Цена: 2700 руб.<br>TR9505</span></div>
+        <img id="photo11" src=".\images\Image154.png" (11)>
+        <div class="gat" ><span id="price11">TR9505<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(11)">заказать</button>
       </div>
       <div>
-        <img id="photo12" src=".\images\Image155.png" onclick="selectPhoto(12)">
-        <div class="gat" ><span id="price12">Цена: 2700 руб.<br>TR9502</span></div>
+        <img id="photo12" src=".\images\Image155.png" (12)>
+        <div class="gat" ><span id="price12">TR9502<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(12)">заказать</button>
       </div>
       <div>
-        <img id="photo13" src=".\images\Image156.png" onclick="selectPhoto(13)">
-        <div class="gat" ><span id="price13">Цена: 2700 руб.<br>TR9049black</span></div>
+        <img id="photo13" src=".\images\Image156.png" (13)>
+        <div class="gat" ><span id="price13">TR9049black<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(13)">заказать</button>
       </div>
       <div>
-        <img id="photo14" src=".\images\Image157.png" onclick="selectPhoto(14)">
-        <div class="gat" ><span id="price14">Цена: 2700 руб.<br>TR9049BROWN</span></div>
+        <img id="photo14" src=".\images\Image157.png" (14)>
+        <div class="gat" ><span id="price14">TR9049BROWN<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(14)">заказать</button>
       </div>
       <div>
-        <img id="photo15" src=".\images\Image158.png" onclick="selectPhoto(15)">
-        <div class="gat" ><span id="price15">Цена: 2700 руб.<br>MJ0789</span></div>
+        <img id="photo15" src=".\images\Image158.png" (15)>
+        <div class="gat" ><span id="price15">MJ0789<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(15)">заказать</button>
       </div>
       <div>
-        <img id="photo16" src=".\images\Image159.png" onclick="selectPhoto(16)">
-        <div class="gat" ><span id="price16">Цена: 2700 руб.<br>MJ0792</span></div>
+        <img id="photo16" src=".\images\Image159.png" (16)>
+        <div class="gat" ><span id="price16">MJ0792<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(16)">заказать</button>
       </div>
       <div>
-        <img id="photo17" src=".\images\Image181.png" onclick="selectPhoto(17)">
-        <div class="gat" ><span id="price17">Цена: 2700 руб.<br>MJ0771</span></div>
+        <img id="photo17" src=".\images\Image181.png" (17)>
+        <div class="gat" ><span id="price17">MJ0771<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(17)">заказать</button>
       </div>
       <div>
-        <img id="photo18" src=".\images\Image161.png" onclick="selectPhoto(18)">
-        <div class="gat" ><span id="price18">Цена: 2700 руб.<br>TR9042</span></div>
-      </div>
-      
-      <div>
-        <img id="photo19" src=".\images\Image163.png" onclick="selectPhoto(19)">
-        <div class="gat" ><span id="price19">Цена: 2700 руб.<br>TR0818</span></div>
-      </div>
-      <div>
-        <img id="photo20" src=".\images\Image165.png" onclick="selectPhoto(20)">
-        <div class="gat" ><span id="price20">Цена: 2700 руб.<br>TR0818</span></div>
-      </div>
-      <div>
-        <img id="photo21" src=".\images\Image167.png" onclick="selectPhoto(21)">
-        <div class="gat" ><span id="price21">Цена: 2700 руб.<br>MJ0813</span></div>
-      </div>
-      <div>
-        <img id="photo22" src=".\images\Image169.png" onclick="selectPhoto(22)">
-        <div class="gat" ><span id="price22">Цена: 2700 руб.<br>TR9505</span></div>
-      </div>
-      <div>
-        <img id="photo23" src=".\images\Image171.png" onclick="selectPhoto(23)">
-        <div class="gat" ><span id="price23">Цена: 2700 руб.<br>MJ0769</span></div>
-      </div>
-      <div>
-        <img id="photo24" src=".\images\Image172.png" onclick="selectPhoto(24)">
-        <div class="gat" ><span id="price24">Цена: 2700 руб.<br>MJ0769</span></div>
-      </div>
-      <div>
-        <img id="photo25" src=".\images\Image175.png" onclick="selectPhoto(25)">
-        <div class="gat" ><span id="price25">Цена: 2700 руб.<br>MJ0749</span></div>
+        <img id="photo18" src=".\images\Image161.png" (18)>
+        <div class="gat" ><span id="price18">TR9042<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(18)">заказать</button>
       </div>
       
       <div>
-        <img id="photo26" src=".\images\Image181.png" onclick="selectPhoto(26)">
-        <div class="gat" ><span id="price26">Цена: 2700 руб.<br>MJ0771</span></div>
+        <img id="photo19" src=".\images\Image163.png" (19)>
+        <div class="gat" ><span id="price19">TR0818<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(19)">заказать</button>
       </div>
       <div>
-        <img  id="photo27" src=".\images\UH (1).jpg" onclick="selectPhoto(27)">
-        <div class="gat"><span id="price27">Цена: 950 руб.<br>MJ0815</span></div>
+        <img id="photo20" src=".\images\Image165.png" (20)>
+        <div class="gat" ><span id="price20">TR0818<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(20)">заказать</button>
       </div>
       <div>
-        <img id="photo28" src=".\images\UH (1).jpg" onclick="selectPhoto(28)">
-        <div class="gat"><span id="price28">Цена: 950 руб.<br>MJ0825</span></div>
+        <img id="photo21" src=".\images\Image167.png" (21)>
+        <div class="gat" ><span id="price21">MJ0813<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(21)">заказать</button>
+      </div>
+      <div>
+        <img id="photo22" src=".\images\Image169.png" (22)>
+        <div class="gat" ><span id="price22">TR9505<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(22)">заказать</button>
+      </div>
+      <div>
+        <img id="photo23" src=".\images\Image171.png" (23)>
+        <div class="gat" ><span id="price23">MJ0769<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(23)">заказать</button>
+      </div>
+      <div>
+        <img id="photo24" src=".\images\Image172.png" (24)>
+        <div class="gat" ><span id="price24">MJ0769<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(24)">заказать</button>
+      </div>
+      <div>
+        <img id="photo25" src=".\images\Image175.png" (25)>
+        <div class="gat" ><span id="price25">MJ0749<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(25)">заказать</button>
+      </div>
+      
+      <div>
+        <img id="photo26" src=".\images\Image181.png" (26)>
+        <div class="gat" ><span id="price26">MJ0771<br>Цена: 2700 руб.</span></div><button onclick="sendToWhatsApp(26)">заказать</button>
+      </div>
+      <div>
+        <img  id="photo27" src=".\images\UH (1).jpg" (27)>
+        <div class="gat"><span id="price27">Цена: 950 руб.<br>MJ0815</span></div><button onclick="sendToWhatsApp(27)">заказать</button>
+      </div>
+      <div>
+        <img id="photo28" src=".\images\UH (1).jpg" (28)>
+        <div class="gat"><span id="price28">Цена: 950 руб.<br>MJ0825</span></div><button onclick="sendToWhatsApp(28)">заказать</button>
       </div>
 	  <div>
-        <img id="photo29" src=".\images\UH (1).jpg" onclick="selectPhoto(29)">
-        <div class="gat"><span id="price29">Цена: 950 руб.<br>TR9041</span></div>
+        <img id="photo29" src=".\images\UH (1).jpg" (29)>
+        <div class="gat"><span id="price29">Цена: 950 руб.<br>TR9041</span></div><button onclick="sendToWhatsApp(29)">заказать</button>
       </div>
 	  
 	  <div>
-        <img id="photo30" src=".\images\UH (2).jpg" onclick="selectPhoto(30)">
-        <div class="gat"><span id="price30">Цена: 950 руб.<br>MJ0804</span></div>
+        <img id="photo30" src=".\images\UH (2).jpg" (30)>
+        <div class="gat"><span id="price30">Цена: 950 руб.<br>MJ0804</span></div><button onclick="sendToWhatsApp(30)">заказать</button>
       </div>
       <div>
-        <img id="photo31" src=".\images\UH (3).jpg" onclick="selectPhoto(31)">
-        <div class="gat"><span id="price31">Цена: 950 руб.<br>MJ0821</span></div>
+        <img id="photo31" src=".\images\UH (3).jpg" (31)>
+        <div class="gat"><span id="price31">Цена: 950 руб.<br>MJ0821</span></div><button onclick="sendToWhatsApp(31)">заказать</button>
       </div>
       <div>
-        <img id="photo32" src=".\images\UH (4).jpg" onclick="selectPhoto(32)">
-        <div class="gat"><span id="price32">Цена: 950 руб.<br>MJ0822</span></div>
+        <img id="photo32" src=".\images\UH .jpg" (32)>
+        <div class="gat"><span id="price32">Цена: 950 руб.<br>MJ0822</span></div><button onclick="sendToWhatsApp(32)">заказать</button>
       </div>
        <div>
-        <img  id="photo33" src=".\images\UH (5).jpg" onclick="selectPhoto(33)">
-        <div class="gat"><span id="price33">Цена: 950 руб.<br>MJ0819</span></div>
+        <img  id="photo33" src=".\images\UH (5).jpg" (33)>
+        <div class="gat"><span id="price33">Цена: 950 руб.<br>MJ0819</span></div><button onclick="sendToWhatsApp(33)">заказать</button>
       </div>
       <div>
-        <img id="photo34" src=".\images\UH (6).jpg" onclick="selectPhoto(34)">
-        <div class="gat"><span id="price34">Цена: 950 руб.<br>MJ0829</span></div>
+        <img id="photo34" src=".\images\UH (6).jpg" (34)>
+        <div class="gat"><span id="price34">Цена: 950 руб.<br>MJ0829</span></div><button onclick="sendToWhatsApp(34)">заказать</button>
       </div>
 	 
 	  <div>
-        <img id="photo35" src=".\images\UH (7).jpg" onclick="selectPhoto(35)">
-        <div class="gat"><span id="price35">Цена: 950 руб.<br>TR9041</span></div>
+        <img id="photo35" src=".\images\UH (7).jpg" (35)>
+        <div class="gat"><span id="price35">Цена: 950 руб.<br>TR9041</span></div><button onclick="sendToWhatsApp(35)">заказать</button>
       </div>
 	 
       <div>
-        <img id="photo36" src=".\images\UH (8).jpg" onclick="selectPhoto(36)">
-        <div class="gat" ><span id="price36">Цена: 950 руб.<br>TR9505</span></div>
+        <img id="photo36" src=".\images\UH (8).jpg" (36)>
+        <div class="gat" ><span id="price36">Цена: 950 руб.<br>TR9505</span></div><button onclick="sendToWhatsApp(36)">заказать</button>
       </div>
       <div>
-        <img id="photo37" src=".\images\UH (9).jpg" onclick="selectPhoto(37)">
-        <div class="gat" ><span id="price37">Цена: 950 руб.<br>TR9505</span></div>
+        <img id="photo37" src=".\images\UH (9).jpg" (37)>
+        <div class="gat" ><span id="price37">Цена: 950 руб.<br>TR9505</span></div><button onclick="sendToWhatsApp(37)">заказать</button>
       </div>
       <div>
-        <img id="photo38" src=".\images\UH (10).jpg" onclick="selectPhoto(38)">
-        <div class="gat" ><span id="price38">Цена: 950 руб.<br>TR9502</span></div>
+        <img id="photo38" src=".\images\UH (10).jpg" (38)>
+        <div class="gat" ><span id="price38">Цена: 950 руб.<br>TR9502</span></div><button onclick="sendToWhatsApp(38)">заказать</button>
       </div>
       <div>
-        <img id="photo39" src=".\images\UH (11).jpg" onclick="selectPhoto(39)">
-        <div class="gat" ><span id="price39">Цена: 950 руб.<br>TR9049black</span></div>
+        <img id="photo39" src=".\images\UH (11).jpg" (39)>
+        <div class="gat" ><span id="price39">Цена: 950 руб.<br>TR9049black</span></div><button onclick="sendToWhatsApp(39)">заказать</button>
       </div>
       <div>
-        <img id="photo40" src=".\images\UH (12).jpg" onclick="selectPhoto(40)">
-        <div class="gat" ><span id="price40">Цена: 950 руб.<br>TR9049BROWN</span></div>
+        <img id="photo40" src=".\images\UH (12).jpg" (40)>
+        <div class="gat" ><span id="price40">Цена: 950 руб.<br>TR9049BROWN</span></div><button onclick="sendToWhatsApp(40)">заказать</button>
       </div>
       <div>
-        <img id="photo41" src=".\images\UH (13).jpg" onclick="selectPhoto(41)">
-        <div class="gat" ><span id="price41">Цена: 950 руб.<br>MJ0789</span></div>
+        <img id="photo41" src=".\images\UH (13).jpg" (41)>
+        <div class="gat" ><span id="price41">Цена: 950 руб.<br>MJ0789</span></div><button onclick="sendToWhatsApp(41)">заказать</button>
       </div>
       <div>
-        <img id="photo42" src=".\images\UH (14).jpg" onclick="selectPhoto(42)">
-        <div class="gat" ><span id="price42">Цена: 950 руб.<br>DP1014</span></div>
+        <img id="photo42" src=".\images\UH (14).jpg" (42)>
+        <div class="gat" ><span id="price42">Цена: 950 руб.<br>DP1014</span></div><button onclick="sendToWhatsApp(42)">заказать</button>
       </div>
       <div>
-        <img id="photo43" src=".\images\UH (15).jpg" onclick="selectPhoto(43)">
-        <div class="gat" ><span id="price43">Цена: 950 руб.<br>DP1014</span></div>
+        <img id="photo43" src=".\images\UH (15).jpg" (43)>
+        <div class="gat" ><span id="price43">Цена: 950 руб.<br>DP1014</span></div><button onclick="sendToWhatsApp(43)">заказать</button>
       </div>
       <div>
-        <img id="photo44" src=".\images\UH (16).jpg" onclick="selectPhoto(44)">
-        <div class="gat" ><span id="price44">Цена: 950 руб.<br>DP1004C2</span></div>
+        <img id="photo44" src=".\images\UH (16).jpg" (44)>
+        <div class="gat" ><span id="price44">Цена: 950 руб.<br>DP1004C2</span></div><button onclick="sendToWhatsApp(44)">заказать</button>
       </div>
       
       <div>
-        <img id="photo45" src=".\images\UH (17).jpg" onclick="selectPhoto(45)">
-        <div class="gat" ><span id="price45">Цена: 950 руб.<br>DP1005C3</span></div>
+        <img id="photo45" src=".\images\UH (17).jpg" (45)>
+        <div class="gat" ><span id="price45">Цена: 950 руб.<br>DP1005C3</span></div><button onclick="sendToWhatsApp(45)">заказать</button>
       </div>
       <div>
-        <img id="photo46" src=".\images\UH (18).jpg" onclick="selectPhoto(46)">
-        <div class="gat" ><span id="price46">Цена: 950 руб.<br>DP1005C7</span></div>
+        <img id="photo46" src=".\images\UH (18).jpg" (46)>
+        <div class="gat" ><span id="price46">Цена: 950 руб.<br>DP1005C7</span></div><button onclick="sendToWhatsApp(46)">заказать</button>
       </div>
       <div>
-        <img id="photo47" src=".\images\UH (19).jpg" onclick="selectPhoto(47)">
-        <div class="gat" ><span id="price47">Цена: 950 руб.<br>DP1005C2</span></div>
+        <img id="photo47" src=".\images\UH (19).jpg" (47)>
+        <div class="gat" ><span id="price47">Цена: 950 руб.<br>DP1005C2</span></div><button onclick="sendToWhatsApp(47)">заказать</button>
       </div>
       <div>
-        <img id="photo48" src=".\images\UH (20).jpg" onclick="selectPhoto(48)">
-        <div class="gat" ><span id="price48">Цена: 950 руб.<br>DP1005C9</span></div>
+        <img id="photo48" src=".\images\UH (20).jpg" (48)>
+        <div class="gat" ><span id="price48">Цена: 950 руб.<br>DP1005C9</span></div><button onclick="sendToWhatsApp(48)">заказать</button>
       </div>
       <div>
-        <img id="photo49" src=".\images\UH (21).jpg" onclick="selectPhoto(49)">
-        <div class="gat" ><span id="price49">Цена: 950 руб.<br>DP1023C7</span></div>
+        <img id="photo49" src=".\images\UH (21).jpg" (49)>
+        <div class="gat" ><span id="price49">Цена: 950 руб.<br>DP1023C7</span></div><button onclick="sendToWhatsApp(49)">заказать</button>
       </div>
       <div>
-        <img id="photo50" src=".\images\UH (22).jpg" onclick="selectPhoto(50)">
-        <div class="gat" ><span id="price50">Цена: 950 руб.<br>DP1018</span></div>
+        <img id="photo50" src=".\images\UH (22).jpg" (50)>
+        <div class="gat" ><span id="price50">Цена: 950 руб.<br>DP1018</span></div><button onclick="sendToWhatsApp(50)">заказать</button>
       </div>
       <div>
-        <img id="photo51" src=".\images\UH (23).jpg" onclick="selectPhoto(51)">
-        <div class="gat" ><span id="price51">Цена: 950 руб.<br>DP1009C9</span></div>
+        <img id="photo51" src=".\images\UH (23).jpg" (51)>
+        <div class="gat" ><span id="price51">Цена: 950 руб.<br>DP1009C9</span></div><button onclick="sendToWhatsApp(51)">заказать</button>
       </div>
       <div>
-        <img  id="photo52" src=".\images\UH (24).jpg" onclick="selectPhoto(52)">
-        <div class="gat"><span id="price52">Цена: 950 руб.<br>DP1017</span></div>
+        <img  id="photo52" src=".\images\UH (24).jpg" (52)>
+        <div class="gat"><span id="price52">Цена: 950 руб.<br>DP1017</span></div><button onclick="sendToWhatsApp(52)">заказать</button>
       </div>
       <div>
-        <img id="photo53" src=".\images\UH (25).jpg" onclick="selectPhoto(53)">
-        <div class="gat"><span id="price53">Цена: 950 руб.<br>DP1016C9</span></div>
+        <img id="photo53" src=".\images\UH (25).jpg" (53)>
+        <div class="gat"><span id="price53">Цена: 950 руб.<br>DP1016C9</span></div><button onclick="sendToWhatsApp(53)">заказать</button>
       </div>
 	  <div>
-        <img id="photo54" src=".\images\UH (26).jpg" onclick="selectPhoto(54)">
-        <div class="gat"><span id="price54">Цена: 950 руб.<br>DP1020C3</span></div>
+        <img id="photo54" src=".\images\UH (26).jpg" (54)>
+        <div class="gat"><span id="price54">Цена: 950 руб.<br>DP1020C3</span></div><button onclick="sendToWhatsApp(54)">заказать</button>
       </div>
 	  
 	  <div>
-        <img id="photo55" src=".\images\UH (27).jpg" onclick="selectPhoto(55)">
-        <div class="gat"><span id="price55">Цена: 950 руб.<br>DP1010C3</span></div>
+        <img id="photo55" src=".\images\UH (27).jpg" (55)>
+        <div class="gat"><span id="price55">Цена: 950 руб.<br>DP1010C3</span></div><button onclick="sendToWhatsApp(55)">заказать</button>
       </div>
       <div>
-        <img id="photo56" src=".\images\UH (28).jpg" onclick="selectPhoto(56)">
-        <div class="gat"><span id="price56">Цена: 950 руб.<br>DP1014-60</span></div>
+        <img id="photo56" src=".\images\UH (28).jpg" (56)>
+        <div class="gat"><span id="price56">Цена: 950 руб.<br>DP1014-60</span></div><button onclick="sendToWhatsApp(56)">заказать</button>
       </div>
       <div>
-        <img id="photo57" src=".\images\UH (29).jpg" onclick="selectPhoto(57)">
-        <div class="gat"><span id="price57">Цена: 950 руб.<br>DP1009C3</span></div>
+        <img id="photo57" src=".\images\UH (29).jpg" (57)>
+        <div class="gat"><span id="price57">Цена: 950 руб.<br>DP1009C3</span></div><button onclick="sendToWhatsApp(57)">заказать</button>
       </div>
        <div>
-        <img  id="photo58" src=".\images\UH (30).jpg" onclick="selectPhoto(58)">
-        <div class="gat"><span id="price58">Цена: 950 руб.<br>DP1014</span></div>
+        <img  id="photo58" src=".\images\UH (30).jpg" (58)>
+        <div class="gat"><span id="price58">Цена: 950 руб.<br>DP1014</span></div><button onclick="sendToWhatsApp(58)">заказать</button>
       </div>
       <div>
-        <img id="photo59" src=".\images\UH (31).jpg" onclick="selectPhoto(59)">
-        <div class="gat"><span id="price59">Цена: 950 руб.<br>DP1004C1</span></div>
+        <img id="photo59" src=".\images\UH (31).jpg" (59)>
+        <div class="gat"><span id="price59">Цена: 950 руб.<br>DP1004C1</span></div><button onclick="sendToWhatsApp(59)">заказать</button>
       </div>
 	 
 	  <div>
-        <img id="photo60" src=".\images\UH (32).jpg" onclick="selectPhoto(60)">
-        <div class="gat"><span id="price60">Цена: 950 руб.<br>DP1013C9</span></div>
+        <img id="photo60" src=".\images\UH (32).jpg" (60)>
+        <div class="gat"><span id="price60">Цена: 950 руб.<br>DP1013C9</span></div><button onclick="sendToWhatsApp(60)">заказать</button>
       </div>
 	 
       <div>
-        <img id="photo61" src=".\images\UH (33).jpg" onclick="selectPhoto(61)">
-        <div class="gat" ><span id="price61">Цена: 950 руб.<br>DPDP1017</span></div>
+        <img id="photo61" src=".\images\UH (33).jpg" (61)>
+        <div class="gat" ><span id="price61">Цена: 950 руб.<br>DPDP1017</span></div><button onclick="sendToWhatsApp(61)">заказать</button>
       </div>
       <div>
-        <img id="photo62" src=".\images\UH (34).jpg" onclick="selectPhoto(62)">
-        <div class="gat" ><span id="price62">Цена: 950 руб.<br>DP1023C3</span></div>
+        <img id="photo62" src=".\images\UH (34).jpg" (62)>
+        <div class="gat" ><span id="price62">Цена: 950 руб.<br>DP1023C3</span></div><button onclick="sendToWhatsApp(62)">заказать</button>
       </div>
       <div>
-        <img id="photo63" src=".\images\UH (35).jpg" onclick="selectPhoto(63)">
-        <div class="gat" ><span id="price63">Цена: 950 руб.<br>DP1023C1</span></div>
+        <img id="photo63" src=".\images\UH (35).jpg" (63)>
+        <div class="gat" ><span id="price63">Цена: 950 руб.<br>DP1023C1</span></div><button onclick="sendToWhatsApp(63)">заказать</button>
       </div>
       <div>
-        <img id="photo64" src=".\images\UH (36).jpg" onclick="selectPhoto(64)">
-        <div class="gat" ><span id="price64">Цена: 950 руб.<br>DP1010C1</span></div>
+        <img id="photo64" src=".\images\UH (36).jpg" (64)>
+        <div class="gat" ><span id="price64">Цена: 950 руб.<br>DP1010C1</span></div><button onclick="sendToWhatsApp(64)">заказать</button>
       </div>
       <div>
-        <img id="photo65" src=".\images\UH (37).jpg" onclick="selectPhoto(65)">
-        <div class="gat" ><span id="price65">Цена: 950 руб.<br>DP1021C3</span></div>
+        <img id="photo65" src=".\images\UH (37).jpg" (65)>
+        <div class="gat" ><span id="price65">Цена: 950 руб.<br>DP1021C3</span></div><button onclick="sendToWhatsApp(65)">заказать</button>
       </div>
       <div>
-        <img id="photo66" src=".\images\UH (38).jpg" onclick="selectPhoto(66)">
-        <div class="gat" ><span id="price66">Цена: 950 руб.<br>DP1020C1</span></div>
+        <img id="photo66" src=".\images\UH (38).jpg" (66)>
+        <div class="gat" ><span id="price66">Цена: 950 руб.<br>DP1020C1</span></div><button onclick="sendToWhatsApp(66)">заказать</button>
       </div>
       <div>
-        <img id="photo67" src=".\images\UH (39).jpg" onclick="selectPhoto(67)">
-        <div class="gat" ><span id="price67">Цена: 950 руб.<br>DP1016C5</span></div>
+        <img id="photo67" src=".\images\UH (39).jpg" (67)>
+        <div class="gat" ><span id="price67">Цена: 950 руб.<br>DP1016C5</span></div><button onclick="sendToWhatsApp(67)">заказать</button>
       </div>
       <div>
-        <img id="photo68" src=".\images\UH (40).jpg" onclick="selectPhoto(68)">
-        <div class="gat" ><span id="price68">Цена: 950 руб.<br>DP1016C1</span></div>
+        <img id="photo68" src=".\images\UH (40).jpg" (68)>
+        <div class="gat" ><span id="price68">Цена: 950 руб.<br>DP1016C1</span></div><button onclick="sendToWhatsApp(68)">заказать</button>
       </div>
       <div>
-        <img id="photo69" src=".\images\UH (41).jpg" onclick="selectPhoto(69)">
-        <div class="gat" ><span id="price69">Цена: 950 руб.<br>DP1021</span></div>
+        <img id="photo69" src=".\images\UH (41).jpg" (69)>
+        <div class="gat" ><span id="price69">Цена: 950 руб.<br>DP1021</span></div><button onclick="sendToWhatsApp(69)">заказать</button>
       </div>
       
       <div>
-        <img id="photo70" src=".\images\UH (42).jpg" onclick="selectPhoto(70)">
-        <div class="gat" ><span id="price70">Цена: 950 руб.<br>DP1020</span></div>
+        <img id="photo70" src=".\images\UH (42).jpg" (70)>
+        <div class="gat" ><span id="price70">Цена: 950 руб.<br>DP1020</span></div><button onclick="sendToWhatsApp(70)">заказать</button>
       </div>
       <div>
-        <img id="photo71" src=".\images\UH (43).jpg" onclick="selectPhoto(71)">
-        <div class="gat" ><span id="price71">Цена: 950 руб.<br>DP1017</span></div>
+        <img id="photo71" src=".\images\UH (43).jpg" (71)>
+        <div class="gat" ><span id="price71">Цена: 950 руб.<br>DP1017</span></div><button onclick="sendToWhatsApp(71)">заказать</button>
       </div>
       <div>
-        <img id="photo72" src=".\images\UH (44).jpg" onclick="selectPhoto(72)">
-        <div class="gat" ><span id="price72">Цена: 950 руб.<br>DP1021</span></div>
+        <img id="photo72" src=".\images\UH (44).jpg" (72)>
+        <div class="gat" ><span id="price72">Цена: 950 руб.<br>DP1021</span></div><button onclick="sendToWhatsApp(72)">заказать</button>
       </div>
       <div>
-        <img id="photo73" src=".\images\UH (45).jpg" onclick="selectPhoto(73)">
-        <div class="gat" ><span id="price73">Цена: 950 руб.<br>DP1003</span></div>
+        <img id="photo73" src=".\images\UH (45).jpg" (73)>
+        <div class="gat" ><span id="price73">Цена: 950 руб.<br>DP1003</span></div><button onclick="sendToWhatsApp(73)">заказать</button>
       </div>
       <div>
-        <img id="photo74" src=".\images\UH (46).jpg" onclick="selectPhoto(74)">
-        <div class="gat" ><span id="price74">Цена: 950 руб.<br>DP1018</span></div>
+        <img id="photo74" src=".\images\UH (46).jpg" (74)>
+        <div class="gat" ><span id="price74">Цена: 950 руб.<br>DP1018</span></div><button onclick="sendToWhatsApp(74)">заказать</button>
       </div>
       <div>
-        <img id="photo75" src=".\images\UH (47).jpg" onclick="selectPhoto(75)">
-        <div class="gat" ><span id="price75">Цена: 950 руб.<br>DP0111</span></div>
+        <img id="photo75" src=".\images\UH (47).jpg" (75)>
+        <div class="gat" ><span id="price75">Цена: 950 руб.<br>DP0111</span></div><button onclick="sendToWhatsApp(75)">заказать</button>
       </div>
       <div>
-        <img id="photo76" src=".\images\UH (48).jpg" onclick="selectPhoto(76)">
-        <div class="gat" ><span id="price76">Цена: 950 руб.<br>DP1013C1</span></div>
+        <img id="photo76" src=".\images\UH (48).jpg" (76)>
+        <div class="gat" ><span id="price76">Цена: 950 руб.<br>DP1013C1</span></div><button onclick="sendToWhatsApp(76)">заказать</button>
       </div>
       <div>
-        <img id="photo77" src=".\images\UH48.jpg" onclick="selectPhoto(77)">
-        <div class="gat" ><span id="price77">Цена: 1350 руб.<br>MR8821C5</span></div>
+        <img id="photo77" src=".\images\UH48.jpg" (77)>
+        <div class="gat" ><span id="price77">Цена: 1350 руб.<br>MR8821C5</span></div><button onclick="sendToWhatsApp(77)">заказать</button>
       </div>
       <div>
-        <img id="photo78" src=".\images\UH49.jpg" onclick="selectPhoto(78)">
-        <div class="gat" ><span id="price78">Цена: 1350 руб.<br>MR8821C3</span></div>
+        <img id="photo78" src=".\images\UH49.jpg" (78)>
+        <div class="gat" ><span id="price78">Цена: 1350 руб.<br>MR8821C3</span></div><button onclick="sendToWhatsApp(78)">заказать</button>
       </div>
       <div>
-        <img id="photo79" src=".\images\UH50.jpg" onclick="selectPhoto(79)">
-        <div class="gat" ><span id="price79">Цена: 1350 руб.<br>MR8836C6</span></div>
+        <img id="photo79" src=".\images\UH50.jpg" (79)>
+        <div class="gat" ><span id="price79">Цена: 1350 руб.<br>MR8836C6</span></div><button onclick="sendToWhatsApp(79)">заказать</button>
       </div>
       <div>
-        <img id="photo80" src=".\images\UH51.jpg" onclick="selectPhoto(80)">
-        <div class="gat" ><span id="price80">Цена: 1350 руб.<br>MR8836C5</span></div>
+        <img id="photo80" src=".\images\UH51.jpg" (80)>
+        <div class="gat" ><span id="price80">Цена: 1350 руб.<br>MR8836C5</span></div><button onclick="sendToWhatsApp(80)">заказать</button>
       </div>
       <div>
-        <img id="photo81" src=".\images\UH52.jpg" onclick="selectPhoto(81)">
-        <div class="gat" ><span id="price81">Цена: 1350 руб.<br>MR8836C1</span></div>
+        <img id="photo81" src=".\images\UH52.jpg" (81)>
+        <div class="gat" ><span id="price81">Цена: 1350 руб.<br>MR8836C1</span></div><button onclick="sendToWhatsApp(81)">заказать</button>
       </div>
       <div>
-        <img id="photo82" src=".\images\UH53.jpg" onclick="selectPhoto(82)">
-        <div class="gat" ><span id="price82">Цена: 1350 руб.<br>8916/54</span></div>
+        <img id="photo82" src=".\images\UH53.jpg" (82)>
+        <div class="gat" ><span id="price82">Цена: 1350 руб.<br>8916/54</span></div><button onclick="sendToWhatsApp(82)">заказать</button>
       </div>
       <div>
-        <img id="photo83" src=".\images\UH54.jpg" onclick="selectPhoto(83)">
-        <div class="gat" ><span id="price83">Цена: 1350 руб.<br>MR8820C2</span></div>
+        <img id="photo83" src=".\images\UH54.jpg" (83)>
+        <div class="gat" ><span id="price83">Цена: 1350 руб.<br>MR8820C2</span></div><button onclick="sendToWhatsApp(83)">заказать</button>
       </div>
       <div>
-        <img id="photo84" src=".\images\UH55.jpg" onclick="selectPhoto(84)">
-        <div class="gat" ><span id="price84">Цена: 1350 руб.<br>MR8820C1</span></div>
+        <img id="photo84" src=".\images\UH55.jpg" (84)>
+        <div class="gat" ><span id="price84">Цена: 1350 руб.<br>MR8820C1</span></div><button onclick="sendToWhatsApp(84)">заказать</button>
       </div>
       <div>
-        <img id="photo85" src=".\images\UH56.jpg" onclick="selectPhoto(85)">
-        <div class="gat" ><span id="price85">Цена: 1350 руб.<br>MR5510C5</span></div>
+        <img id="photo85" src=".\images\UH56.jpg" (85)>
+        <div class="gat" ><span id="price85">Цена: 1350 руб.<br>MR5510C5</span></div><button onclick="sendToWhatsApp(85)">заказать</button>
       </div>
       <div>
-        <img id="photo86" src=".\images\UH57.jpg" onclick="selectPhoto(86)">
-        <div class="gat" ><span id="price86">Цена: 1350 руб.<br>MR8893C6</span></div>
+        <img id="photo86" src=".\images\UH57.jpg" (86)>
+        <div class="gat" ><span id="price86">Цена: 1350 руб.<br>MR8893C6</span></div><button onclick="sendToWhatsApp(86)">заказать</button>
       </div>
       <div>
-        <img id="photo87" src=".\images\UH58.jpg" onclick="selectPhoto(87)">
-        <div class="gat" ><span id="price87">Цена: 1350 руб.<br>MR8822C6</span></div>
+        <img id="photo87" src=".\images\UH58.jpg" (87)>
+        <div class="gat" ><span id="price87">Цена: 1350 руб.<br>MR8822C6</span></div><button onclick="sendToWhatsApp(87)">заказать</button>
       </div>
       <div>
-        <img id="photo88" src=".\images\UH59.jpg" onclick="selectPhoto(88)">
-        <div class="gat" ><span id="price88">Цена: 1350 руб.<br>MR5807c5</span></div>
+        <img id="photo88" src=".\images\UH59.jpg" (88)>
+        <div class="gat" ><span id="price88">Цена: 1350 руб.<br>MR5807c5</span></div><button onclick="sendToWhatsApp(88)">заказать</button>
       </div>
     </div>
-    <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
-     justify-content:center;">
-       
-      <div  class="senter" id="sender">
-       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-         где сможете добавить информацию и проверить заказ.<br>
-         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-      <div style="display:grid;text-align: center;">
-      <!-- Add hidden input for selected photos -->
-      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-      
-      
-      
-        <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">Напишите адрес и телефон : </label>
-        <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
-Тел:
-
-Адрес:
-
-Время когда принести:</textarea></div>
-        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-        border-radius:15px 20px 15px 20px;
-          width:130px;height:60px;" type="submit">Отправить заказ</button>
-      
-    </div>
-    </form>
+    
     <div  class="senter" id="sender">
       &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
       &nbsp;&nbsp;<br>Вы можете сделать это проще,
@@ -687,18 +629,16 @@ Mужские поляризационные солнцезащитные очк
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-<div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
-<div id="image-container">
-            <!-- Add your images here -->
-			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-        </div>
-        </div>
+  <div id="carousel-container">
+    <div id="image-container">
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>
 	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
@@ -717,8 +657,8 @@ Mужские поляризационные солнцезащитные очк
         <p>Смело обращайтесь к нам:</p>
         <address style="display:grid; gap:10px;">
             Электронная почта: <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-            <a class="a" href="tel:+79315908599">Телефон: +79622923791;</a>
-			<a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791"><img alt="Chat on WhatsApp"
+            <a class="a" href="tel:+79315908599">Телефон: +79315908599;</a>
+			<a class="a" aria-label="WhatsApp" href="https://wa.me/79315908599"><img alt="Chat on WhatsApp"
                  src="WhatsAppButtonGreenLarge.svg" />
 </a>
         </address>
@@ -737,6 +677,6 @@ Mужские поляризационные солнцезащитные очк
  
 
 </div> </div>
-<script src="js/woman.js" ></script>
+
 </body>
 </html>

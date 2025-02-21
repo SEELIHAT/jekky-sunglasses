@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
 	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
+<script src="newstyle.js" defer></script>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -44,42 +43,29 @@
 </script>
 </head>
 <style>
-#carousel-container {margin-top:30px;
-            width: 300px;height:300px;
-            overflow: hidden;
-            position: relative;
-            margin: auto;
-			border:3px solid yellow;
-        }
+  #carousel-container {
+margin-top: 30px;
+width: 300px;
+height: 300px;
+overflow: hidden;
+position: relative;
+margin: auto;
+border: 3px solid yellow;
+}
 
-        #image-container {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+#image-container {
+display: flex;
+width: 100%; /* Adjust width based on the number of images */
+transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-image {
-            width: 100%;
-            height: auto;
-        }
+.carousel-image {
+width: 300px;
+height: 300px;
+flex-shrink: 0; /* Prevents images from shrinking */
+}
 
-        #prevBtn, #nextBtn {
-             position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            cursor: pointer;
-			border:3px solid yellow;
-			font-size:15px;
-        }
-
-        #prevBtn {
-            left: 5px;
-        }
-
-        #nextBtn {
-            right: 5px;
-        }
-       
-		</style>
+      </style>
 
 
 
@@ -230,20 +216,17 @@
    <br>8.Хорошего дня и удачных покупок.<br> 
      </p>
    
-   <script>let laja = document.querySelector('.newbutton');
-   laja.onclick = function() {
-     let not = document.querySelector('.notsee');
-     not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-   };</script><div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
+   <div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
     
 
 
     
-    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+   
       <div class="photobar">
+        
         <div>
           <img class="soflens" id="photo1111"
-           src=".\images\Image1111.png"  onclick="selectPhoto(1111)">
+           src=".\images\Image1111.png" >
           
           <div class="gat"><span id="price1111">
             Замена через:1 день<br>
@@ -255,12 +238,12 @@
             Радиус кривизны:8.6<br>
             Упаковка :30 линз<br>
             Производство:Ирландия<br></span>
-            <span style="color:black;"class="redcolor">Цена: 1800 руб.</span></div>
+            <span style="color:black;"class="redcolor">Цена: 1800 руб.</span></div><button onclick="sendToWhatsApp(1111)">заказать</button>
         </div>
   
         <div >
           <img class="soflens" id="photo2222"
-           src=".\images\Image2222.png"  onclick="selectPhoto(2222)">
+           src=".\images\Image2222.png" >
           
           <div class="gat"><span id="price2222">Режим ношения:дневной<br>
             Замена через:1месяц<br>
@@ -270,39 +253,16 @@
             Дизайн :сферические<br>
             Радиус кривизны:8.6<br>
             Упаковка:6линз<br>
-            Производство:Ирландия<br></span><span style="color:black;" class="redcolor">Цена: 1800 руб.</span></div>
+            Производство:Ирландия<br>
+          </span>
+          <span style="color:black;" class="redcolor">Цена: 1800 руб.</span></div><button onclick="sendToWhatsApp(2222)">заказать</button>
         </div>
      
     
        
      </div>
-     <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
-      justify-content:center;">
-        
-       <div  class="senter" id="sender">
-        &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-        &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-          где сможете добавить информацию и проверить заказ.<br>
-          &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-       <div style="display:grid;text-align: center;">
-       <!-- Add hidden input for selected photos -->
-       <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-       
-       
-       
-         <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">Напишите адрес и телефон : </label>
-         <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
- Тел:
- 
- Адрес:
- 
- Время когда принести:</textarea></div>
-         <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-         border-radius:15px 20px 15px 20px;
-           width:130px;height:60px;" type="submit">Отправить заказ</button>
-       
-     </div>
-     </form>
+
+    
 
 
    
@@ -324,18 +284,16 @@
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-  <div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
+  <div id="carousel-container">
     <div id="image-container">
-                <!-- Add your images here -->
-          <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-                <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-                <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-                <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-                <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-                <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-            </div>
-            </div>
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>
 	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
@@ -370,6 +328,6 @@
  
 
 </div> </div>
-<script src="js/woman.js" ></script>
+
 </body>
 </html>

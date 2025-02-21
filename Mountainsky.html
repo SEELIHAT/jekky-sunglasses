@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
 	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
+<script src="newstyle.js" defer></script>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -41,53 +40,32 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-    document.getElementById('button').style.display = 'none';
-  }</script>
+
   </head>
-<style>
-#carousel-container {margin-top:30px;
-            width: 300px;height:300px;
-            overflow: hidden;
-            position: relative;
-            margin: auto;
-			border:3px solid yellow;
-        }
+  <style>
+    #carousel-container {
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  border: 3px solid yellow;
+}
 
-        #image-container {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+#image-container {
+  display: flex;
+  width: 100%; /* Adjust width based on the number of images */
+  transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-image {
-            width: 100%;
-            height: auto;
-        }
+.carousel-image {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0; /* Prevents images from shrinking */
+}
 
-        #prevBtn, #nextBtn {
-             position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            cursor: pointer;
-			border:3px solid yellow;
-			font-size:15px;
-        }
-
-        #prevBtn {
-            left: 5px;
-        }
-
-        #nextBtn {
-            right: 5px;
-        }
-       
-		</style>
+        </style>
 
 
 
@@ -254,11 +232,7 @@
    <br>8.Хорошего дня и удачных покупок.<br> 
      </p>
    
-   <script>let laja = document.querySelector('.newbutton');
-   laja.onclick = function() {
-     let not = document.querySelector('.notsee');
-     not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-   };</script></section>
+   </section>
 
     <div class="pica">
       <img src=".\images\DUBAI.png" class="image1">
@@ -268,150 +242,123 @@
       <img src=".\images\sungirl.png" class="image5">
      
   </div>	
-
-    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+  <div class="spacearound"><p class="catalog1">Kаталог</p></div>
+    
      <div class="photobar">
       <div>
-        <img  id="photo1101" src=".\images\KA (1).jpg" onclick="selectPhoto(1101)">
-        <div class="gat"><span id="price1101">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img  id="photo1101" src=".\images\KA (1).jpg">
+        <div class="gat"><span id="price1101">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1101)">заказать</button>
       </div>
       <div>
-        <img id="photo1102" src=".\images\KA (2).jpg" onclick="selectPhoto(1102)">
-        <div class="gat"><span id="price1102">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1102" src=".\images\KA (2).jpg">
+        <div class="gat"><span id="price1102">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1102)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1103" src=".\images\KA (3).jpg" onclick="selectPhoto(1103)">
-        <div class="gat"><span id="price1103">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1103" src=".\images\KA (3).jpg">
+        <div class="gat"><span id="price1103">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1103)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1104" src=".\images\KA (4).jpg" onclick="selectPhoto(1104)">
-        <div class="gat" ><span id="price1104">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1104" src=".\images\KA (4).jpg">
+        <div class="gat" ><span id="price1104">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1104)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1105" src=".\images\KA (5).jpg" onclick="selectPhoto(1105)">
-        <div class="gat"><span id="price1105">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1105" src=".\images\KA (5).jpg">
+        <div class="gat"><span id="price1105">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1105)">заказать</button>
       </div>
       <div>
-        <img id="photo1106" src=".\images\KA (6).jpg" onclick="selectPhoto(1106)">
-        <div class="gat"><span id="price1106">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1106" src=".\images\KA (6).jpg">
+        <div class="gat"><span id="price1106">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1106)">заказать</button>
       </div>
       <div>
-        <img id="photo1107" src=".\images\KA (7).jpg" onclick="selectPhoto(1107)">
-        <div class="gat"><span id="price1107">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1107" src=".\images\KA (7).jpg">
+        <div class="gat"><span id="price1107">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1107)">заказать</button>
       </div>
        <div>
-        <img  id="photo1108" src=".\images\KA (8).jpg" onclick="selectPhoto(1108)">
-        <div class="gat"><span id="price1108">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img  id="photo1108" src=".\images\KA (8).jpg">
+        <div class="gat"><span id="price1108">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1108)">заказать</button>
       </div>
       <div>
-        <img id="photo1109" src=".\images\KA (9).jpg" onclick="selectPhoto(1109)">
-        <div class="gat"><span id="price1109">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div>
+        <img id="photo1109" src=".\images\KA (9).jpg">
+        <div class="gat"><span id="price1109">Детские очки<br> для горных лыж<br>Цена: 1900 руб.</span></div><button onclick="sendToWhatsApp(1109)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1110" src=".\images\GORA (1).jpg" onclick="selectPhoto(1110)">
-        <div class="gat"><span id="price1110">Горнолыжные очки<br>Цена: 3500 руб.</span></div>
+        <img id="photo1110" src=".\images\GORA (1).jpg">
+        <div class="gat"><span id="price1110">Горнолыжные очки<br>Цена: 3500 руб.</span></div><button onclick="sendToWhatsApp(1110)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1111" src=".\images\GORA (2).jpg" onclick="selectPhoto(1111)">
-        <div class="gat"><span id="price1111">Горнолыжные очки<br>Цена: 3500 руб.</span></div>
+        <img id="photo1111" src=".\images\GORA (2).jpg">
+        <div class="gat"><span id="price1111">Горнолыжные очки<br>Цена: 3500 руб.</span></div><button onclick="sendToWhatsApp(1111)">заказать</button>
       </div>
 	  <div>
-        <img id="photo1112" src=".\images\GORA (3).jpg" onclick="selectPhoto(1112)">
-        <div class="gat"><span id="price1112">Горнолыжные очки<br>Цена: 3500 руб.</span></div>
+        <img id="photo1112" src=".\images\GORA (3).jpg">
+        <div class="gat"><span id="price1112">Горнолыжные очки<br>Цена: 3500 руб.</span></div><button onclick="sendToWhatsApp(1112)">заказать</button>
       </div>
       <div>
-        <img id="photo1113" src=".\images\GORA (4).jpg" onclick="selectPhoto(1113)">
-        <div class="gat" ><span id="price1113">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1113" src=".\images\GORA (4).jpg">
+        <div class="gat" ><span id="price1113">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1113)">заказать</button>
       </div>
       <div>
-        <img id="photo1114" src=".\images\GORA (5).jpg" onclick="selectPhoto(1114)">
-        <div class="gat" ><span id="price1114">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1114" src=".\images\GORA (5).jpg">
+        <div class="gat" ><span id="price1114">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1114)">заказать</button>
       </div>
       <div>
-        <img id="photo1115" src=".\images\GORA (6).jpg" onclick="selectPhoto(1115)">
-        <div class="gat" ><span id="price1115">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1115" src=".\images\GORA (6).jpg">
+        <div class="gat" ><span id="price1115">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1115)">заказать</button>
       </div>
       <div>
-        <img id="photo1116" src=".\images\GORA (7).jpg" onclick="selectPhoto(1116)">
-        <div class="gat" ><span id="price1116">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1116" src=".\images\GORA (7).jpg">
+        <div class="gat" ><span id="price1116">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1116)">заказать</button>
       </div>
       <div>
-        <img id="photo1117" src=".\images\GORA (8).jpg" onclick="selectPhoto(1117)">
-        <div class="gat" ><span id="price1117">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1117" src=".\images\GORA (8).jpg">
+        <div class="gat" ><span id="price1117">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1117)">заказать</button>
       </div>
       <div>
-        <img id="photo1118" src=".\images\GORA (9).jpg" onclick="selectPhoto(1118)">
-        <div class="gat" ><span id="price1118">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1118" src=".\images\GORA (9).jpg">
+        <div class="gat" ><span id="price1118">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1118)">заказать</button>
       </div>
       <div>
-        <img id="photo1119" src=".\images\GORA (10).jpg" onclick="selectPhoto(1119)">
-        <div class="gat" ><span id="price1119">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1119" src=".\images\GORA (10).jpg">
+        <div class="gat" ><span id="price1119">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1119)">заказать</button>
       </div>
       <div>
-        <img id="photo1120" src=".\images\GORA (11).jpg" onclick="selectPhoto(1120)">
-        <div class="gat" ><span id="price1120">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1120" src=".\images\GORA (11).jpg">
+        <div class="gat" ><span id="price1120">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1120)">заказать</button>
       </div>
       <div>
-        <img id="photo1121" src=".\images\GORA (12).jpg" onclick="selectPhoto(1121)">
-        <div class="gat" ><span id="price1121">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1121" src=".\images\GORA (12).jpg">
+        <div class="gat" ><span id="price1121">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1121)">заказать</button>
       </div>
       <div>
-        <img id="photo1122" src=".\images\GORA (13).jpg" onclick="selectPhoto(1122)">
-        <div class="gat" ><span id="price1122">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1122" src=".\images\GORA (13).jpg">
+        <div class="gat" ><span id="price1122">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1122)">заказать</button>
       </div>
       <div>
-        <img id="photo1123" src=".\images\GORA (14).jpg" onclick="selectPhoto(1123)">
-        <div class="gat" ><span id="price1123">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1123" src=".\images\GORA (14).jpg">
+        <div class="gat" ><span id="price1123">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1123)">заказать</button>
       </div>
       <div>
-        <img id="photo1124" src=".\images\GORA (15).jpg" onclick="selectPhoto(1124)">
-        <div class="gat" ><span id="price1124">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1124" src=".\images\GORA (15).jpg">
+        <div class="gat" ><span id="price1124">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1124)">заказать</button>
       </div>
       <div>
-        <img id="photo1125" src=".\images\GORA (16).jpg" onclick="selectPhoto(1125)">
-        <div class="gat" ><span id="price1125">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1125" src=".\images\GORA (16).jpg">
+        <div class="gat" ><span id="price1125">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1125)">заказать</button>
       </div>
       <div>
-        <img id="photo1126" src=".\images\GORA (17).jpg" onclick="selectPhoto(1126)">
-        <div class="gat" ><span id="price1126">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1126" src=".\images\GORA (17).jpg">
+        <div class="gat" ><span id="price1126">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1126)">заказать</button>
       </div>
       <div>
-        <img id="photo1127" src=".\images\GORA (18).jpg" onclick="selectPhoto(1127)">
-        <div class="gat" ><span id="price1127">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
+        <img id="photo1127" src=".\images\GORA (18).jpg">
+        <div class="gat" ><span id="price1127">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1127)">заказать</button>
       </div>
       <div>
-        <img id="photo1128" src=".\images\GORA (19).jpg" onclick="selectPhoto(1128)">
-        <div class="gat" ><span id="price1128">Горнолыжные очки<br>Цена: 2900 руб.</span></div>
-      </div>
+        <img id="photo1128" src=".\images\GORA (19).jpg">
+        <div class="gat" ><span id="price1128">Горнолыжные очки<br>Цена: 2900 руб.</span></div><button onclick="sendToWhatsApp(1128)">заказать</button>
+      </div></div>
 
-    </div>
-    <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
-     justify-content:center;">
-       
-      <div  class="senter" id="sender">
-       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-         где сможете добавить информацию и проверить заказ.<br>
-         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-      <div style="display:grid;text-align: center;">
-      <!-- Add hidden input for selected photos -->
-      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-      
-      
-      
-        <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">Напишите адрес и телефон : </label>
-        <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
-Тел:
-
-Адрес:
-
-Время когда принести:</textarea></div>
-        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-        border-radius:15px 20px 15px 20px;
-          width:130px;height:60px;" type="submit">Отправить заказ</button>
-      
-    </div>
-    </form>
+    
     <div  class="senter" id="sender">
       &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
       &nbsp;&nbsp;<br>Вы можете сделать это проще,
@@ -431,18 +378,16 @@
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-<div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
-<div id="image-container">
-            <!-- Add your images here -->
-			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-        </div>
-        </div>
+  <div id="carousel-container">
+    <div id="image-container">
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>
 	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
@@ -481,6 +426,6 @@
  
 
 </div> </div>
-<script src="js/woman.js" ></script>
+
 </body>
 </html>

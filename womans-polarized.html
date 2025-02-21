@@ -12,9 +12,9 @@
  
     <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
-	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
+
+<link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
+<script src="newstyle.js" defer></script>  
 
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -31,66 +31,12 @@
         webvisor:true
    });
 </script>
+
 <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<script>
-  function changeDisplay() {
-    document.getElementById('myDiv').style.display = 'grid';
-    document.getElementById('myDiv').style.color = 'yellow';
-    document.getElementById('myDiv').style.fontStyle = 'italic';
-    document.getElementById('myDiv').style.fontWidth = 'bold';
-    document.getElementById('myDiv').style.fontSize = '20'+'px';
-    document.getElementById('button').style.display = 'none';
-  }</script>
+
   
-    
-    <style>
-      #carousel-container {margin-top:30px;
-                  width: 300px;height:300px;
-                  overflow: hidden;
-                  position: relative;
-                  margin: auto;
-            border:3px solid yellow;
-              }
-      
-              #image-container {
-                  display: flex;
-                  transition: transform 0.5s ease;
-              }
-      
-              .carousel-image {
-                  width: 100%;
-                  height: auto;
-              }
-      
-              #prevBtn, #nextBtn {
-                   position: absolute;
-                  top: 90%;
-                  transform: translateY(-50%);
-                  cursor: pointer;
-            border:3px solid yellow;
-            font-size:15px;
-              }
-      
-              #prevBtn {
-                  left: 5px;
-              }
-      
-              #nextBtn {
-                  right: 5px;
-              }
-              
-              @media (max-width: 1270px) {
-                .underpage {overflow:hidden;
-                  display: none; position:absolute; top:600px;z-index:-7;
-                }
-                .underphoto,
-                .undera {
-                  display: none;
-                  width: 1px;
-                }
-              }
-          </style>
+   
 
   
 </head>
@@ -107,10 +53,10 @@
             <a href="https://yandex.ru/maps/-/CDRUnE1z">
                  <img style="width:20px ; height:20px; padding:5px;" src=".\images\yandex map.png" width:20px;height:20px;>
                 </a>
-        <a  href="https://wa.me/+79622923791">
+        <a  href="https://wa.me/+79315908599">
          <img style="width:20px ; height:20px; padding:5px; " src=".\images\wats.jpg"
           width:20px;height:20px;></a>
-       <a  href="tel:+79622923791"> <img style="width:20px ; height:20px; padding:5px;" src="images\phone.jpg"
+       <a  href="tel:+79315908599"> <img style="width:20px ; height:20px; padding:5px;" src="images\phone.jpg"
          width:20px;height:20px;></a>
     </aside>
     <div class="underpage">
@@ -257,11 +203,7 @@
    <br>8.Хорошего дня и удачных покупок.<br> 
      </p>
    </section>
-   <script>let laja = document.querySelector('.newbutton');
-   laja.onclick = function() {
-     let not = document.querySelector('.notsee');
-     not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-   };</script>
+   
     
     <div  class="pica">
       <img src=".\images\DUBAI.png" >
@@ -272,315 +214,291 @@
       
       </div>
 
-    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+    
      <div class="photobar">
       <div>
-        <img  id="photo901" src=".\images\WA (2).jpg" onclick="selectPhoto(901)">
-        <div class="gat"><span id="price901">Женские поляризационные<br> очки #03817C9<br>Цена: 1350 руб.</span></div>
+        <img  id="photo901" src=".\images\WA (2).jpg">
+        <div class="gat"><span id="price901">Женские поляризационные<br> очки #03817C9<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(901)">Заказать</button>
       </div>
       <div>
-        <img id="photo902" src=".\images\WA (4).jpg" onclick="selectPhoto(902)">
-        <div class="gat"><span id="price902">Женские поляризационные<br> очки #03824C7 <br>Цена: 1350 руб.</span></div>
+        <img id="photo902" src=".\images\WA (4).jpg">
+        <div class="gat"><span id="price902">Женские поляризационные<br> очки #03824C7 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(902)">Заказать</button>
       </div>
 	  <div>
-        <img id="photo903" src=".\images\WA (6).jpg" onclick="selectPhoto(903)">
-        <div class="gat"><span id="price903">Женские поляризационные<br> очки #03817C18 <br>Цена: 1350 руб.</span></div>
+        <img id="photo903" src=".\images\WA (6).jpg">
+        <div class="gat"><span id="price903">Женские поляризационные<br> очки #03817C18 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(903)">Заказать</button>
       </div>
 	  <div>
-        <img id="photo904" src=".\images\WA (8).jpg" onclick="selectPhoto(904)">
-        <div class="gat" ><span id="price904">Женские поляризационные<br> очки #03771C7<br>Цена: 1350 руб.</span></div>
+        <img id="photo904" src=".\images\WA (8).jpg">
+        <div class="gat" ><span id="price904">Женские поляризационные<br> очки #03771C7<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(904)">Заказать</button>
       </div>
      
     <div>
-        <img id="photo906" src=".\images\WA (12).jpg" onclick="selectPhoto(906)">
-        <div class="gat"><span id="price906">Женские поляризационные<br> очки #03817C7 <br>Цена: 1350 руб.</span></div>
+        <img id="photo906" src=".\images\WA (12).jpg">
+        <div class="gat"><span id="price906">Женские поляризационные<br> очки #03817C7 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(906)">Заказать</button>
       </div>
       <div>
-        <img id="photo907" src=".\images\WA (14).jpg" onclick="selectPhoto(907)">
-        <div class="gat"><span id="price907">Женские поляризационные<br> очки #03815C31 <br>Цена: 1350 руб.</span></div>
+        <img id="photo907" src=".\images\WA (14).jpg">
+        <div class="gat"><span id="price907">Женские поляризационные<br> очки #03815C31 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(907)">Заказать</button>
       </div>
        <div>
-        <img  id="photo908" src=".\images\WA (16).jpg" onclick="selectPhoto(908)">
-        <div class="gat"><span id="price908">Женские поляризационные<br> очки #88812C9 <br>Цена: 1350 руб.</span></div>
+        <img  id="photo908" src=".\images\WA (16).jpg">
+        <div class="gat"><span id="price908">Женские поляризационные<br> очки #88812C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(908)">Заказать</button>
       </div>
       <div>
-        <img id="photo909" src=".\images\WA (18).jpg" onclick="selectPhoto(909)">
-        <div class="gat"><span id="price909">Женские поляризационные<br> очки #03729C9 <br>Цена: 1350 руб.</span></div>
+        <img id="photo909" src=".\images\WA (18).jpg">
+        <div class="gat"><span id="price909">Женские поляризационные<br> очки #03729C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(909)">Заказать</button>
       </div>
 	  <div>
-        <img id="photo910" src=".\images\WA (20).jpg" onclick="selectPhoto(910)">
-        <div class="gat"><span id="price910">Женские поляризационные<br> очки #03757C6 <br>Цена: 1350 руб.</span></div>
+        <img id="photo910" src=".\images\WA (20).jpg">
+        <div class="gat"><span id="price910">Женские поляризационные<br> очки #03757C6 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(910)">Заказать</button>
       </div>
 	  <div>
-        <img id="photo911" src=".\images\WA (22).jpg" onclick="selectPhoto(911)">
-        <div class="gat"><span id="price911">Женские поляризационные<br> очки #03801C3 <br>Цена: 1350 руб.</span></div>
+        <img id="photo911" src=".\images\WA (22).jpg">
+        <div class="gat"><span id="price911">Женские поляризационные<br> очки #03801C3 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(911)">Заказать</button>
       </div>
 	  <div>
-        <img id="photo912" src=".\images\WA (24).jpg" onclick="selectPhoto(912)">
-        <div class="gat"><span id="price912">Женские поляризационные<br> очки #03750C9 <br>Цена: 1350 руб.</span></div>
+        <img id="photo912" src=".\images\WA (24).jpg">
+        <div class="gat"><span id="price912">Женские поляризационные<br> очки #03750C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(912)">Заказать</button>
       </div>
       <div>
-        <img id="photo913" src=".\images\WA (26).jpg" onclick="selectPhoto(913)">
-        <div class="gat" ><span id="price913">Женские поляризационные<br> очки #07198C8 <br>Цена: 1350 руб.</span></div>
+        <img id="photo913" src=".\images\WA (26).jpg">
+        <div class="gat" ><span id="price913">Женские поляризационные<br> очки #07198C8 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(913)">Заказать</button>
       </div>
       <div>
-        <img id="photo914" src=".\images\WA (28).jpg" onclick="selectPhoto(914)">
-        <div class="gat" ><span id="price914">Женские поляризационные<br> очки#03628C9 <br>Цена: 1350 руб.</span></div>
+        <img id="photo914" src=".\images\WA (28).jpg">
+        <div class="gat" ><span id="price914">Женские поляризационные<br> очки#03628C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(914)">Заказать</button>
       </div>
       <div>
-        <img id="photo915" src=".\images\WA (30).jpg" onclick="selectPhoto(915)">
-        <div class="gat" ><span id="price915">Женские поляризационные<br> очки #03737C42 <br>Цена: 1350 руб.</span></div>
+        <img id="photo915" src=".\images\WA (30).jpg">
+        <div class="gat" ><span id="price915">Женские поляризационные<br> очки #03737C42 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(915)">Заказать</button>
       </div>
       <div>
-        <img id="photo916" src=".\images\WA (32).jpg" onclick="selectPhoto(916)">
-        <div class="gat" ><span id="price916">Женские поляризационные<br> очки #03737C9-31 <br>Цена: 1350 руб.</span></div>
+        <img id="photo916" src=".\images\WA (32).jpg">
+        <div class="gat" ><span id="price916">Женские поляризационные<br> очки #03737C9-31 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(916)">Заказать</button>
       </div>
       <div>
-        <img id="photo917" src=".\images\WA (34).jpg" onclick="selectPhoto(917)">
-        <div class="gat" ><span id="price917">Женские поляризационные<br> очки #03737-14 <br>Цена: 1350 руб.</span></div>
+        <img id="photo917" src=".\images\WA (34).jpg">
+        <div class="gat" ><span id="price917">Женские поляризационные<br> очки #03737-14 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(917)">Заказать</button>
       </div>
       <div>
-        <img id="photo918" src=".\images\WA (36).jpg" onclick="selectPhoto(918)">
-        <div class="gat" ><span id="price918">Женские поляризационные<br> очки #03818C9 <br>Цена: 1350 руб.</span></div>
+        <img id="photo918" src=".\images\WA (36).jpg">
+        <div class="gat" ><span id="price918">Женские поляризационные<br> очки #03818C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(918)">Заказать</button>
       </div>
       <div>
-        <img id="photo919" src=".\images\WA (38).jpg" onclick="selectPhoto(919)">
-        <div class="gat" ><span id="price919">Женские поляризационные<br> очки #03818 C8-02<br>Цена: 1350 руб.</span></div>
+        <img id="photo919" src=".\images\WA (38).jpg">
+        <div class="gat" ><span id="price919">Женские поляризационные<br> очки #03818 C8-02<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(919)">Заказать</button>
       </div>
       <div>
-        <img id="photo920" src=".\images\WA (40).jpg" onclick="selectPhoto(920)">
-        <div class="gat" ><span id="price920">Женские поляризационные<br> очки #03835 C7-31 <br>Цена: 1350 руб.</span></div>
+        <img id="photo920" src=".\images\WA (40).jpg">
+        <div class="gat" ><span id="price920">Женские поляризационные<br> очки #03835 C7-31 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(920)">Заказать</button>
       </div>
       <div>
-        <img id="photo921" src=".\images\WA (42).jpg" onclick="selectPhoto(921)">
-        <div class="gat" ><span id="price921">Женские поляризационные<br> очки #03824 C8-02 <br>Цена: 1350 руб.</span></div>
+        <img id="photo921" src=".\images\WA (42).jpg">
+        <div class="gat" ><span id="price921">Женские поляризационные<br> очки #03824 C8-02 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(921)">Заказать</button>
       </div>
       <div>
-        <img id="photo922" src=".\images\WA (44).jpg" onclick="selectPhoto(922)">
-        <div class="gat" ><span id="price922">Женские поляризационные<br> очки #03817 C18-124 <br>Цена: 1350 руб.</span></div>
+        <img id="photo922" src=".\images\WA (44).jpg">
+        <div class="gat" ><span id="price922">Женские поляризационные<br> очки #03817 C18-124 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(922)">Заказать</button>
       </div>
       <div>
-        <img id="photo923" src=".\images\WA (46).jpg" onclick="selectPhoto(923)">
-        <div class="gat" ><span id="price923">Женские поляризационные<br> очки  #03824C23<br>Цена: 1350 руб.</span></div>
+        <img id="photo923" src=".\images\WA (46).jpg">
+        <div class="gat" ><span id="price923">Женские поляризационные<br> очки  #03824C23<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(923)">Заказать</button>
       </div>
       <div>
-        <img id="photo924" src=".\images\WA (48).jpg" onclick="selectPhoto(924)">
-        <div class="gat" ><span id="price924">Женские поляризационные<br> очки #03809C17 <br>Цена: 1350 руб.</span></div>
+        <img id="photo924" src=".\images\WA (48).jpg">
+        <div class="gat" ><span id="price924">Женские поляризационные<br> очки #03809C17 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(924)">Заказать</button>
       </div>
       <div>
-        <img id="photo925" src=".\images\WA (50).jpg" onclick="selectPhoto(925)">
-        <div class="gat" ><span id="price925">Женские поляризационные<br> очки #03747C5 <br>Цена: 1350 руб.</span></div>
+        <img id="photo925" src=".\images\WA (50).jpg">
+        <div class="gat" ><span id="price925">Женские поляризационные<br> очки #03747C5 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(925)">Заказать</button>
       </div>
       <div>
-        <img id="photo926" src=".\images\WA (52).jpg" onclick="selectPhoto(926)">
-        <div class="gat" ><span id="price926">Женские поляризационные<br> очки #03809C9<br>Цена:1350 руб.</span></div>
+        <img id="photo926" src=".\images\WA (52).jpg">
+        <div class="gat" ><span id="price926">Женские поляризационные<br> очки #03809C9<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(926)">Заказать</button>
       </div>
       <div>
-        <img id="photo927" src=".\images\WA (54).jpg" onclick="selectPhoto(927)">
-        <div class="gat" ><span id="price927">Женские поляризационные<br> очки #03757C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo927" src=".\images\WA (54).jpg">
+        <div class="gat" ><span id="price927">Женские поляризационные<br> очки #03757C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(927)">Заказать</button>
       </div>
       <div>
-        <img id="photo928" src=".\images\WA (56).jpg" onclick="selectPhoto(928)">
-        <div class="gat" ><span id="price928">Женские поляризационные<br> очки #03793C5 <br>Цена: 1350 руб.</span></div>
+        <img id="photo928" src=".\images\WA (56).jpg">
+        <div class="gat" ><span id="price928">Женские поляризационные<br> очки #03793C5 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(928)">Заказать</button>
       </div>
       <div>
-        <img id="photo929" src=".\images\WA (58).jpg" onclick="selectPhoto(929)">
-        <div class="gat" ><span id="price929">Женские поляризационные<br> очки #3793C3 <br>Цена: 1350 руб.</span></div>
+        <img id="photo929" src=".\images\WA (58).jpg">
+        <div class="gat" ><span id="price929">Женские поляризационные<br> очки #3793C3 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(929)">Заказать</button>
       </div>
       <div>
-        <img id="photo930" src=".\images\WA (60).jpg" onclick="selectPhoto(930)">
-        <div class="gat" ><span id="price930">Женские поляризационные<br> очки 03837C36 <br>Цена: 1350 руб.</span></div>
+        <img id="photo930" src=".\images\WA (60).jpg">
+        <div class="gat" ><span id="price930">Женские поляризационные<br> очки 03837C36 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(930)">Заказать</button>
       </div>
       <div>
-        <img id="photo931" src=".\images\WA (62).jpg" onclick="selectPhoto(931)">
-        <div class="gat" ><span id="price931">Женские поляризационные<br> очки #03742C12<br>Цена: 1350 руб.</span></div>
+        <img id="photo931" src=".\images\WA (62).jpg">
+        <div class="gat" ><span id="price931">Женские поляризационные<br> очки #03742C12<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(931)">Заказать</button>
       </div>
       <div>
-        <img id="photo932" src=".\images\WA (64).jpg" onclick="selectPhoto(932)">
-        <div class="gat" ><span id="price932">Женские поляризационные<br> очки #03757C7<br>Цена: 1350 руб.</span></div>
+        <img id="photo932" src=".\images\WA (64).jpg">
+        <div class="gat" ><span id="price932">Женские поляризационные<br> очки #03757C7<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(932)">Заказать</button>
       </div>
       <div>
-        <img id="photo933" src=".\images\WA (66).jpg" onclick="selectPhoto(933)">
-        <div class="gat" ><span id="price933">Женские поляризационные<br> очки #03696C9 <br>Цена: 1350 руб.</span></div>
+        <img id="photo933" src=".\images\WA (66).jpg">
+        <div class="gat" ><span id="price933">Женские поляризационные<br> очки #03696C9 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(933)">Заказать</button>
       </div>
       <div>
-        <img id="photo934" src=".\images\WA (68).jpg" onclick="selectPhoto(934)">
-        <div class="gat" ><span id="price934">Женские поляризационные<br> очки #07198C24 <br>Цена: 1350 руб.</span></div>
+        <img id="photo934" src=".\images\WA (68).jpg">
+        <div class="gat" ><span id="price934">Женские поляризационные<br> очки #07198C24 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(934)">Заказать</button>
       </div>
       <div>
-        <img id="photo935" src=".\images\WA (70).jpg" onclick="selectPhoto(935)">
-        <div class="gat" ><span id="price935">Женские поляризационные<br> очки #03722C9-31 <br>Цена: 1350 руб.</span></div>
+        <img id="photo935" src=".\images\WA (70).jpg">
+        <div class="gat" ><span id="price935">Женские поляризационные<br> очки #03722C9-31 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(935)">Заказать</button>
       </div>
       <div>
-        <img id="photo936" src=".\images\WA (72).jpg" onclick="selectPhoto(936)">
-        <div class="gat" ><span id="price936">Женские поляризационные<br> очки #03824C24-09<br>Цена: 1350 руб.</span></div>
+        <img id="photo936" src=".\images\WA (72).jpg">
+        <div class="gat" ><span id="price936">Женские поляризационные<br> очки #03824C24-09<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(936)">Заказать</button>
       </div>
       <div>
-        <img id="photo937" src=".\images\WA (74).jpg" onclick="selectPhoto(937)">
-        <div class="gat" ><span id="price937">Женские поляризационные<br> очки #03812 C20-68<br>Цена: 1350 руб.</span></div>
+        <img id="photo937" src=".\images\WA (74).jpg">
+        <div class="gat" ><span id="price937">Женские поляризационные<br> очки #03812 C20-68<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(937)">Заказать</button>
       </div>
       <div>
-        <img id="photo938" src=".\images\WA (76).jpg" onclick="selectPhoto(938)">
-        <div class="gat" ><span id="price938">Женские поляризационные<br> очки #03739 C50-28<br>Цена: 1350 руб.</span></div>
+        <img id="photo938" src=".\images\WA (76).jpg">
+        <div class="gat" ><span id="price938">Женские поляризационные<br> очки #03739 C50-28<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(938)">Заказать</button>
       </div>
       <div>
-        <img id="photo939" src=".\images\WA (78).jpg" onclick="selectPhoto(939)">
-        <div class="gat" ><span id="price939">Женские поляризационные<br> очки #03729 C9-14<br>Цена: 1350 руб.</span></div>
+        <img id="photo939" src=".\images\WA (78).jpg">
+        <div class="gat" ><span id="price939">Женские поляризационные<br> очки #03729 C9-14<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(939)">Заказать</button>
       </div>
       <div>
-        <img id="photo940" src=".\images\WA (80).jpg" onclick="selectPhoto(940)">
-        <div class="gat" ><span id="price940">Женские поляризационные<br> очки #03815 C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo940" src=".\images\WA (80).jpg">
+        <div class="gat" ><span id="price940">Женские поляризационные<br> очки #03815 C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(940)">Заказать</button>
       </div>
       <div>
-        <img id="photo941" src=".\images\WA (82).jpg" onclick="selectPhoto(941)">
-        <div class="gat" ><span id="price941">Женские поляризационные<br> очки #03824C9-124<br>Цена: 1350 руб.</span></div>
+        <img id="photo941" src=".\images\WA (82).jpg">
+        <div class="gat" ><span id="price941">Женские поляризационные<br> очки #03824C9-124<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(941)">Заказать</button>
       </div>
       <div>
-        <img id="photo942" src=".\images\WA (84).jpg" onclick="selectPhoto(942)">
-        <div class="gat" ><span id="price942">Женские поляризационные<br> очки #03757C8-02<br>Цена: 1350 руб.</span></div>
+        <img id="photo942" src=".\images\WA (84).jpg">
+        <div class="gat" ><span id="price942">Женские поляризационные<br> очки #03757C8-02<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(942)">Заказать</button>
       </div>
       <div>
-        <img id="photo943" src=".\images\WA (86).jpg" onclick="selectPhoto(943)">
-        <div class="gat" ><span id="price943">Женские поляризационные<br> очки#03832C9-124 <br>Цена: 1350 руб.</span></div>
+        <img id="photo943" src=".\images\WA (86).jpg">
+        <div class="gat" ><span id="price943">Женские поляризационные<br> очки#03832C9-124 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(943)">Заказать</button>
       </div>
       <div>
-        <img id="photo944" src=".\images\WA (88).jpg" onclick="selectPhoto(944)">
-        <div class="gat" ><span id="price944">Женские поляризационные<br> очки #03747C5<br>Цена: 1350 руб.</span></div>
+        <img id="photo944" src=".\images\WA (88).jpg">
+        <div class="gat" ><span id="price944">Женские поляризационные<br> очки #03747C5<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(944)">Заказать</button>
       </div>
       <div>
-        <img id="photo945" src=".\images\WA (90).jpg" onclick="selectPhoto(945)">
-        <div class="gat" ><span id="price945">Женские поляризационные<br> очки #03815<br>Цена: 1350 руб.</span></div>
+        <img id="photo945" src=".\images\WA (90).jpg">
+        <div class="gat" ><span id="price945">Женские поляризационные<br> очки #03815<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(945)">Заказать</button>
       </div>
       <div>
-        <img id="photo946" src=".\images\WA (92).jpg" onclick="selectPhoto(946)">
-        <div class="gat" ><span id="price946">Женские поляризационные<br> очки #03727C8-02<br>Цена: 1350 руб.</span></div>
+        <img id="photo946" src=".\images\WA (92).jpg">
+        <div class="gat" ><span id="price946">Женские поляризационные<br> очки #03727C8-02<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(946)">Заказать</button>
       </div>
       <div>
-        <img id="photo947" src=".\images\WA (94).jpg" onclick="selectPhoto(947)">
-        <div class="gat" ><span id="price947">Женские поляризационные<br> очки #03818C7 <br>Цена: 1350 руб.</span></div>
+        <img id="photo947" src=".\images\WA (94).jpg">
+        <div class="gat" ><span id="price947">Женские поляризационные<br> очки #03818C7 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(947)">Заказать</button>
       </div>
       <div>
-        <img id="photo948" src=".\images\WA (96).jpg" onclick="selectPhoto(948)">
-        <div class="gat" ><span id="price948">Женские поляризационные<br> очки #03815C8-02<br>Цена: 1350 руб.</span></div>
+        <img id="photo948" src=".\images\WA (96).jpg">
+        <div class="gat" ><span id="price948">Женские поляризационные<br> очки #03815C8-02<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(948)">Заказать</button>
       </div>
       <div>
-        <img id="photo949" src=".\images\WA (98).jpg" onclick="selectPhoto(949)">
-        <div class="gat" ><span id="price949">Женские поляризационные<br> очки #03815C3-31<br>Цена: 1350 руб.</span></div>
+        <img id="photo949" src=".\images\WA (98).jpg">
+        <div class="gat" ><span id="price949">Женские поляризационные<br> очки #03815C3-31<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(949)">Заказать</button>
       </div>
       <div>
-        <img id="photo950" src=".\images\WA (100).jpg" onclick="selectPhoto(950)">
-        <div class="gat" ><span id="price950">Женские поляризационные<br> очки #03734C9-31<br>Цена: 1350 руб.</span></div>
+        <img id="photo950" src=".\images\WA (100).jpg">
+        <div class="gat" ><span id="price950">Женские поляризационные<br> очки #03734C9-31<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(950)">Заказать</button>
       </div>
       <div>
-        <img id="photo951" src=".\images\WA (102).jpg" onclick="selectPhoto(951)">
-        <div class="gat" ><span id="price951">Женские поляризационные<br> очки #03815C5-22 <br>Цена: 1350 руб.</span></div>
+        <img id="photo951" src=".\images\WA (102).jpg">
+        <div class="gat" ><span id="price951">Женские поляризационные<br> очки #03815C5-22 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(951)">Заказать</button>
       </div>
       <div>
-        <img id="photo952" src=".\images\WA (104).jpg" onclick="selectPhoto(952)">
-        <div class="gat" ><span id="price952">Женские поляризационные<br> очки #3454C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo952" src=".\images\WA (104).jpg">
+        <div class="gat" ><span id="price952">Женские поляризационные<br> очки #3454C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(952)">Заказать</button>
       </div>
       <div>
-        <img id="photo953" src=".\images\WA (106).jpg" onclick="selectPhoto(953)">
-        <div class="gat" ><span id="price953">Женские поляризационные<br> очки #03815C9-08 <br>Цена: 1350 руб.</span></div>
+        <img id="photo953" src=".\images\WA (106).jpg">
+        <div class="gat" ><span id="price953">Женские поляризационные<br> очки #03815C9-08 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(953)">Заказать</button>
       </div>
       <div>
-        <img id="photo954" src=".\images\WA (108).jpg" onclick="selectPhoto(954)">
-        <div class="gat" ><span id="price954">Женские поляризационные<br> очки #03835C18-124 <br>Цена: 1350 руб.</span></div>
+        <img id="photo954" src=".\images\WA (108).jpg">
+        <div class="gat" ><span id="price954">Женские поляризационные<br> очки #03835C18-124 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(954)">Заказать</button>
       </div>
       <div>
-        <img id="photo955" src=".\images\WA (110).jpg" onclick="selectPhoto(955)">
-        <div class="gat" ><span id="price955">Женские поляризационные<br> очки #03747C9-124<br>Цена: 1350 руб.</span></div>
+        <img id="photo955" src=".\images\WA (110).jpg">
+        <div class="gat" ><span id="price955">Женские поляризационные<br> очки #03747C9-124<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(955)">Заказать</button>
       </div>
       <div>
-        <img id="photo956" src=".\images\WA (112).jpg" onclick="selectPhoto(956)">
-        <div class="gat" ><span id="price956">Женские поляризационные<br> очки #03812C28-31 <br>Цена: 1350 руб.</span></div>
+        <img id="photo956" src=".\images\WA (112).jpg">
+        <div class="gat" ><span id="price956">Женские поляризационные<br> очки #03812C28-31 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(956)">Заказать</button>
       </div>
       <div>
-        <img id="photo957" src=".\images\WA (114).jpg" onclick="selectPhoto(957)">
-        <div class="gat" ><span id="price957">Женские поляризационные<br> очки #3801C2-61<br>Цена: 1350 руб.</span></div>
+        <img id="photo957" src=".\images\WA (114).jpg">
+        <div class="gat" ><span id="price957">Женские поляризационные<br> очки #3801C2-61<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(957)">Заказать</button>
       </div>
       <div>
-        <img id="photo958" src=".\images\WA (116).jpg" onclick="selectPhoto(958)">
-        <div class="gat" ><span id="price958">Женские поляризационные<br> очки #03835C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo958" src=".\images\WA (116).jpg">
+        <div class="gat" ><span id="price958">Женские поляризационные<br> очки #03835C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(958)">Заказать</button>
       </div>
       <div>
-        <img id="photo959" src=".\images\WA (118).jpg" onclick="selectPhoto(959)">
-        <div class="gat" ><span id="price959">Женские поляризационные<br> очки #03747C10-124 <br>Цена: 1350 руб.</span></div>
+        <img id="photo959" src=".\images\WA (118).jpg">
+        <div class="gat" ><span id="price959">Женские поляризационные<br> очки #03747C10-124 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(959)">Заказать</button>
       </div>
       <div>
-        <img id="photo960" src=".\images\WA (120).jpg" onclick="selectPhoto(960)">
-        <div class="gat" ><span id="price960">Женские поляризационные<br> очки #03747C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo960" src=".\images\WA (120).jpg">
+        <div class="gat" ><span id="price960">Женские поляризационные<br> очки #03747C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(960)">Заказать</button>
       </div>
       <div>
-        <img id="photo961" src=".\images\WA (122).jpg" onclick="selectPhoto(961)">
-        <div class="gat" ><span id="price961">Женские поляризационные<br> очки #03747C6-28<br>Цена: 1350 руб.</span></div>
+        <img id="photo961" src=".\images\WA (122).jpg">
+        <div class="gat" ><span id="price961">Женские поляризационные<br> очки #03747C6-28<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(961)">Заказать</button>
       </div>
       <div>
-        <img id="photo962" src=".\images\WA (124).jpg" onclick="selectPhoto(962)">
-        <div class="gat" ><span id="price962">Женские поляризационные<br> очки #3454 C6-28 <br>Цена: 1350 руб.</span></div>
+        <img id="photo962" src=".\images\WA (124).jpg">
+        <div class="gat" ><span id="price962">Женские поляризационные<br> очки #3454 C6-28 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(962)">Заказать</button>
       </div>
       <div>
-        <img id="photo963" src=".\images\WA (126).jpg" onclick="selectPhoto(963)">
-        <div class="gat" ><span id="price963">Женские поляризационные<br> очки #03742C9-124 <br>Цена: 1350 руб.</span></div>
+        <img id="photo963" src=".\images\WA (126).jpg">
+        <div class="gat" ><span id="price963">Женские поляризационные<br> очки #03742C9-124 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(963)">Заказать</button>
       </div>
       <div>
-        <img id="photo964" src=".\images\WA (128).jpg" onclick="selectPhoto(964)">
-        <div class="gat" ><span id="price964">Женские поляризационные<br> очки #3742C9-08 <br>Цена: 1350 руб.</span></div>
+        <img id="photo964" src=".\images\WA (128).jpg">
+        <div class="gat" ><span id="price964">Женские поляризационные<br> очки #3742C9-08 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(964)">Заказать</button>
       </div>
       <div>
-        <img id="photo965" src=".\images\WA (130).jpg" onclick="selectPhoto(965)">
-        <div class="gat" ><span id="price965">Женские поляризационные<br> очки #03739C10-31<br>Цена: 1350 руб.</span></div>
+        <img id="photo965" src=".\images\WA (130).jpg">
+        <div class="gat" ><span id="price965">Женские поляризационные<br> очки #03739C10-31<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(965)">Заказать</button>
       </div>
       <div>
-        <img id="photo966" src=".\images\WA (132).jpg" onclick="selectPhoto(966)">
-        <div class="gat" ><span id="price966">Женские поляризационные<br> очки #03727C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo966" src=".\images\WA (132).jpg">
+        <div class="gat" ><span id="price966">Женские поляризационные<br> очки #03727C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(966)">Заказать</button>
       </div>
       <div>
-        <img id="photo967" src=".\images\WA (134).jpg" onclick="selectPhoto(967)">
-        <div class="gat" ><span id="price967">Женские поляризационные<br> очки #03742C12-25 <br>Цена: 1350 руб.</span></div>
+        <img id="photo967" src=".\images\WA (134).jpg">
+        <div class="gat" ><span id="price967">Женские поляризационные<br> очки #03742C12-25 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(967)">Заказать</button>
       </div>
       <div>
-        <img id="photo968" src=".\images\WA (136).jpg" onclick="selectPhoto(968)">
-        <div class="gat" ><span id="price968">Женские поляризационные<br> очки  #03742C9-08<br>Цена: 1350 руб.</span></div>
+        <img id="photo968" src=".\images\WA (136).jpg">
+        <div class="gat" ><span id="price968">Женские поляризационные<br> очки  #03742C9-08<br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(968)">Заказать</button>
       </div>
       <div>
-        <img id="photo969" src=".\images\WA (138).jpg" onclick="selectPhoto(969)">
-        <div class="gat" ><span id="price969">Женские поляризационные<br> очки #03742C10-08 <br>Цена: 1350 руб.</span></div>
+        <img id="photo969" src=".\images\WA (138).jpg">
+        <div class="gat" ><span id="price969">Женские поляризационные<br> очки #03742C10-08 <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(969)">Заказать</button>
       </div>
       <div>
-        <img id="photo970" src=".\images\WA (140).jpg" onclick="selectPhoto(970)">
-        <div class="gat" ><span id="price970">Женские поляризационные<br> очки # <br>Цена: 1350 руб.</span>
+        <img id="photo970" src=".\images\WA (140).jpg">
+        <div class="gat" ><span id="price970">Женские поляризационные<br> очки # <br>Цена: 1350 руб.</span></div><button onclick="sendToWhatsApp(970)">Заказать</button>
         </div>
       </div>
 
     </div>
-    <div class="divsender">
+    
        
-      <div  class="senter" id="sender">
-       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-         где сможете добавить информацию и проверить заказ.<br>
-         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-      <div style="display:grid;text-align: center;">
-      <!-- Add hidden input for selected photos -->
-      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-      
-      
-      
-        <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">
-          Напишите адрес и телефон : </label>
-        <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
-Тел:
-
-Адрес:
-
-Время когда принести:</textarea></div>
-        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-        border-radius:15px 20px 15px 20px;
-          width:130px;height:60px;" type="submit">Отправить заказ</button>
-      
-    </div>
-    </form>
+     
     <div  class="senter" id="sender">
       &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
       &nbsp;&nbsp;<br>Вы можете сделать это проще,
@@ -602,18 +520,16 @@
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-<div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
-<div id="image-container">
-            <!-- Add your images here -->
-			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-        </div>
-        </div>
+  <div id="carousel-container">
+    <div id="image-container">
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>
 	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
@@ -633,8 +549,8 @@
         <p>Смело обращайтесь к нам:</p>
         <address style="display:grid; gap:10px;">
             Электронная почта: <a class="a" href="mailto:etumanov77@gmail">etumanov77@gmail.com</a>
-            <a class="a" href="tel:+79315908599">Телефон: +79622923791;</a>
-			<a class="a" aria-label="WhatsApp" href="https://wa.me/79622923791"><img alt="Chat on WhatsApp"
+            <a class="a" href="tel:+79315908599">Телефон: +79315908599;</a>
+			<a class="a" aria-label="WhatsApp" href="https://wa.me/79315908599"><img alt="Chat on WhatsApp"
                  src="WhatsAppButtonGreenLarge.svg" />
 </a>
         </address>
@@ -653,6 +569,6 @@
  
 
 </div> </div>
-<script src="js/woman.js" ></script>
+
 </body>
 </html>

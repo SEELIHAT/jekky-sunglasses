@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="jekky.css">
     <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
 	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
-    <script src="js/woman.js" defer></script>
+    <script src="newstyle.js" defer></script>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -53,67 +51,36 @@
   gtag('config', 'G-YZNK7MZSMY');
 </script>
 
-    <script>
-      function changeDisplay() {
-        document.getElementById('myDiv').style.display = 'grid';
-        document.getElementById('myDiv').style.color = 'yellow';
-        document.getElementById('myDiv').style.fontStyle = 'italic';
-        document.getElementById('myDiv').style.fontWidth = 'bold';
-        document.getElementById('myDiv').style.fontSize = '20'+'px';
-      }</script>
+   
 
 <SCRIPT>document.body.style.overflowX = 'hidden';
 </SCRIPT></head>
 <style>
-  #carousel-container {margin-top:30px;
-              width: 300px;height:300px;
-              overflow: hidden;
-              position: relative;
-              margin: auto;
-        border:3px solid yellow;
-          }
-  
-          #image-container {
-              display: flex;
-              transition: transform 0.5s ease;
-          }
-  
-          .carousel-image {
-              width: 100%;
-              height: auto;
-          }
-  
-          #prevBtn, #nextBtn {
-               position: absolute;
-              top: 90%;
-              transform: translateY(-50%);
-              cursor: pointer;
-        border:3px solid yellow;
-        font-size:15px;
-          }
-  
-          #prevBtn {
-              left: 5px;
-          }
-  
-          #nextBtn {
-              right: 5px;
-          }
-         
-      </style>
-<script></script>
-<script> window.addEventListener('scroll', function() {
-  if (window.pageYOffset > 150) {
-    var elements = document.querySelectorAll('.underpage');
-    elements.forEach(function(element) {
-      element.style.display = 'none';
-    });
-  }
-});</script>
+  #carousel-container {
+margin-top: 30px;
+width: 300px;
+height: 300px;
+overflow: hidden;
+position: relative;
+margin: auto;
+border: 3px solid yellow;
+}
 
-  
-  
-  
+#image-container {
+display: flex;
+width: 100%; /* Adjust width based on the number of images */
+transition: transform 0.5s ease-in-out;
+}
+
+.carousel-image {
+width: 300px;
+height: 300px;
+flex-shrink: 0; /* Prevents images from shrinking */
+}
+
+      </style>
+
+ 
 <body class="page">
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVWZV2K4"
@@ -318,95 +285,65 @@
             <br>8.Хорошего дня и удачных покупок.<br> 
               </p>
             
-            <script>let laja = document.querySelector('.newbutton');
-            laja.onclick = function() {
-              let not = document.querySelector('.notsee');
-              not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-            };</script><div class="spacearound"><p class="catalog1">Каталог</p></div></section>
+            <div class="spacearound"><p class="catalog1">Каталог</p></div></section>
             
     
     
 
 
-    <form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+   
      <div class="photobar">
       <div>
-        <img  id="photo1" src=".\images\fut001.jpg" onclick="selectPhoto(1)">
-        <div class="gat"><span id="price1">Цена: 150 руб.</span></div>
+        <img  id="photo1" src=".\images\fut001.jpg">
+        <div class="gat"><span id="price1">Цена: 150 руб.</span></div><button onclick="sendToWhatsApp(1)">заказать</button> 
       </div>
       <div>
-        <img id="photo2" src=".\images\fut002.jpg" onclick="selectPhoto(2)">
-        <div class="gat"><span id="price2">Цена: 150 руб.</span></div>
+        <img id="photo2" src=".\images\fut002.jpg">
+        <div class="gat"><span id="price2">Цена: 150 руб.</span></div><button onclick="sendToWhatsApp(2)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo3" src=".\images\fut003.jpg" onclick="selectPhoto(3)">
-        <div class="gat"><span id="price3">Цена: 150 руб.</span></div>
+        <img id="photo3" src=".\images\fut003.jpg">
+        <div class="gat"><span id="price3">Цена: 150 руб.</span></div><button onclick="sendToWhatsApp(3)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo4" src=".\images\fut006.jpg" onclick="selectPhoto(4)">
-        <div class="gat" ><span id="price4">Цена: 350 руб.</span></div>
+        <img id="photo4" src=".\images\fut006.jpg">
+        <div class="gat" ><span id="price4">Цена: 350 руб.</span></div><button onclick="sendToWhatsApp(4)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo5" src=".\images\fut007.jpg" onclick="selectPhoto(5)">
-        <div class="gat"><span id="price5">Цена: 450 руб.</span></div>
+        <img id="photo5" src=".\images\fut007.jpg">
+        <div class="gat"><span id="price5">Цена: 450 руб.</span></div><button onclick="sendToWhatsApp(5)">заказать</button> 
       </div>
       <div>
-        <img id="photo6" src=".\images\fut009.jpg" onclick="selectPhoto(6)">
-        <div class="gat"><span id="price6">Цена: 450 руб.</span></div>
+        <img id="photo6" src=".\images\fut009.jpg">
+        <div class="gat"><span id="price6">Цена: 450 руб.</span></div><button onclick="sendToWhatsApp(6)">заказать</button> 
       </div>
       <div>
-        <img id="photo7" src=".\images\fut10.jpg" onclick="selectPhoto(7)">
-        <div class="gat"><span id="price7">Цена: 450 руб.</span></div>
+        <img id="photo7" src=".\images\fut10.jpg">
+        <div class="gat"><span id="price7">Цена: 450 руб.</span></div><button onclick="sendToWhatsApp(7)">заказать</button> 
       </div>
        <div>
-        <img  id="photo8" src=".\images\fut110.jpg" onclick="selectPhoto(8)">
-        <div class="gat"><span id="price8">Цена: 300 руб.</span></div>
+        <img  id="photo8" src=".\images\fut110.jpg">
+        <div class="gat"><span id="price8">Цена: 300 руб.</span></div><button onclick="sendToWhatsApp(8)">заказать</button> 
       </div>
       <div>
-        <img id="photo9" src=".\images\fut120.jpg" onclick="selectPhoto(9)">
-        <div class="gat"><span id="price9">Цена: 200 руб.</span></div>
+        <img id="photo9" src=".\images\fut120.jpg">
+        <div class="gat"><span id="price9">Цена: 200 руб.</span></div><button onclick="sendToWhatsApp(9)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo10" src=".\images\fut130.jpg" onclick="selectPhoto(10)">
-        <div class="gat"><span id="price3">Цена: 250 руб.</span></div>
+        <img id="photo10" src=".\images\fut130.jpg">
+        <div class="gat"><span id="price3">Цена: 250 руб.</span></div><button onclick="sendToWhatsApp(10)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo11" src=".\images\fut140.jpg" onclick="selectPhoto(11)">
-        <div class="gat"><span id="price3">Цена: 200 руб.</span></div>
+        <img id="photo11" src=".\images\fut140.jpg">
+        <div class="gat"><span id="price3">Цена: 200 руб.</span></div><button onclick="sendToWhatsApp(11)">заказать</button> 
       </div>
 	  <div>
-        <img id="photo12" src=".\images\fut12.jpg" onclick="selectPhoto(12)">
-        <div class="gat"><span id="price3">Цена: 50 руб.</span></div>
+        <img id="photo12" src=".\images\fut12.jpg" >
+        <div class="gat"><span id="price3">Цена: 50 руб.</span></div><button onclick="sendToWhatsApp(12)">заказать</button> 
       </div>
       
     </div>
-    <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
-     justify-content:center;">
-       
-      <div  class="senter" id="sender">
-       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-         где сможете добавить информацию и проверить заказ.<br>
-         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-      <div style="display:grid;text-align: center;">
-      <!-- Add hidden input for selected photos -->
-      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-      
-      
-      
-        <label class="labelbottom" for="addressPhone">Напишите адрес и телефон : </label>
-        <textarea  id="addressPhone" name="addressPhone" rows="7" cols="40">
-Тел:
-
-Адрес:
-
-Время когда принести:</textarea></div>
-        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-        border-radius:15px 20px 15px 20px;
-          width:130px;height:60px;" type="submit">Отправить заказ</button>
-      
-    </div>
-    </form>
+   
   
     <div  class="senter" id="sender">
       &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
@@ -426,19 +363,17 @@
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-<div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
-<div id="image-container">
-            <!-- Add your images here -->
-			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-        </div>
-        </div>
-	  
+
+  <div id="carousel-container">
+    <div id="image-container">
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
    </div>

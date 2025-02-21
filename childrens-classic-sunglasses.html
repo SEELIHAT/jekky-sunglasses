@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="jekky.css">
 <link rel ="shortcut icon" href=".\images\optik.svg" width="100"height="100" type="image/png">
 	
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
+<script src="newstyle.js" defer></script>
+ 
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -30,16 +30,7 @@
        webvisor:true
   });
 </script>
-<script>
 
-    function changeDisplay() {
-      document.getElementById('myDiv').style.display = 'grid';
-      document.getElementById('myDiv').style.color = 'yellow';
-      document.getElementById('myDiv').style.fontStyle = 'italic';
-      document.getElementById('myDiv').style.fontWidth = 'bold';
-      document.getElementById('myDiv').style.fontSize = '20'+'px';
-      document.getElementById('button').style.display = 'none';
-    }</script>
 
 <noscript><div><img src="https://mc.yandex.ru/watch/96758597" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
@@ -62,43 +53,29 @@
 </script>
 </head>
 <style>
-   #myDiv{display:none;}
-#carousel-container {margin-top:30px;
-            width: 300px;height:300px;
-            overflow: hidden;
-            position: relative;
-            margin: auto;
-			border:3px solid yellow;
-        }
+  #carousel-container {
+margin-top: 30px;
+width: 300px;
+height: 300px;
+overflow: hidden;
+position: relative;
+margin: auto;
+border: 3px solid yellow;
+}
 
-        #image-container {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
+#image-container {
+display: flex;
+width: 100%; /* Adjust width based on the number of images */
+transition: transform 0.5s ease-in-out;
+}
 
-        .carousel-image {
-            width: 100%;
-            height: auto;
-        }
+.carousel-image {
+width: 300px;
+height: 300px;
+flex-shrink: 0; /* Prevents images from shrinking */
+}
 
-        #prevBtn, #nextBtn {
-             position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            cursor: pointer;
-			border:3px solid yellow;
-			font-size:15px;
-        }
-
-        #prevBtn {
-            left: 5px;
-        }
-
-        #nextBtn {
-            right: 5px;
-        }
-       
-		</style>
+      </style>
 
 
 
@@ -288,94 +265,64 @@
     <br>8.Хорошего дня и удачных покупок.<br> 
       </p>
     
-    <script>let laja = document.querySelector('.newbutton');
-    laja.onclick = function() {
-      let not = document.querySelector('.notsee');
-      not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
-    };</script><div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
+  <div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
     
-<form  action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
+
      <div class="photobar">
       <div>
-        <img  id="photo401" src=".\images\det01.jpg" onclick="selectPhoto(401)">
-        <div class="gat"><span id="price401">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img  id="photo401" src=".\images\det01.jpg">
+        <div class="gat"><span id="price401">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(401)">заказать</button>
       </div>
       <div>
-        <img id="photo402" src=".\images\det02.jpg" onclick="selectPhoto(402)">
-        <div class="gat"><span id="price402">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo402" src=".\images\det02.jpg">
+        <div class="gat"><span id="price402">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(402)">заказать</button>
       </div>
 	  <div>
-        <img id="photo403" src=".\images\det03.jpg" onclick="selectPhoto(403)">
-        <div class="gat"><span id="price403">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo403" src=".\images\det03.jpg">
+        <div class="gat"><span id="price403">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(403)">заказать</button>
       </div>
 	  <div>
-        <img id="photo404" src=".\images\det04.jpg" onclick="selectPhoto(404)">
-        <div class="gat" ><span id="price404">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo404" src=".\images\det04.jpg">
+        <div class="gat" ><span id="price404">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(404)">заказать</button>
       </div>
 	  <div>
-        <img id="photo405" src=".\images\det05.jpg" onclick="selectPhoto(405)">
-        <div class="gat"><span id="price405">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo405" src=".\images\det05.jpg">
+        <div class="gat"><span id="price405">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(405)">заказать</button>
       </div>
       <div>
-        <img id="photo406" src=".\images\det06.jpg" onclick="selectPhoto(406)">
-        <div class="gat"><span id="price406">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo406" src=".\images\det06.jpg">
+        <div class="gat"><span id="price406">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(406)">заказать</button>
       </div>
       <div>
-        <img id="photo407" src=".\images\det07.jpg" onclick="selectPhoto(407)">
-        <div class="gat"><span id="price407">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo407" src=".\images\det07.jpg">
+        <div class="gat"><span id="price407">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(407)">заказать</button>
       </div>
        <div>
-        <img  id="photo408" src=".\images\det08.jpg" onclick="selectPhoto(408)">
-        <div class="gat"><span id="price408">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img  id="photo408" src=".\images\det08.jpg">
+        <div class="gat"><span id="price408">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(408)">заказать</button>
       </div>
       <div>
-        <img id="photo409" src=".\images\det09.jpg" onclick="selectPhoto(409)">
-        <div class="gat"><span id="price409">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo409" src=".\images\det09.jpg">
+        <div class="gat"><span id="price409">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(409)">заказать</button>
       </div>
 	  <div>
-        <img id="photo410" src=".\images\det10.jpg" onclick="selectPhoto(410)">
-        <div class="gat"><span id="price410">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo410" src=".\images\det10.jpg">
+        <div class="gat"><span id="price410">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(410)">заказать</button>
       </div>
 	  <div>
-        <img id="photo411" src=".\images\det11.jpg" onclick="selectPhoto(411)">
-        <div class="gat"><span id="price411">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo411" src=".\images\det11.jpg">
+        <div class="gat"><span id="price411">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(411)">заказать</button>
       </div>
 	  <div>
-        <img id="photo412" src=".\images\det12.jpg" onclick="selectPhoto(412)">
-        <div class="gat"><span id="price412">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo412" src=".\images\det12.jpg">
+        <div class="gat"><span id="price412">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(412)">заказать</button>
       </div>
       <div>
-        <img id="photo413" src=".\images\det13.jpg" onclick="selectPhoto(413)">
-        <div class="gat" ><span id="price413">Детские очки<br> Поляризованные<br>Цена: 500 руб.</span></div>
+        <img id="photo413" src=".\images\det13.jpg">
+        <div class="gat" ><span id="price413">Детские очки<br> Поляризованные<br>Цена: 500  руб.</span></div><button onclick="sendToWhatsApp(413)">заказать</button>
       </div>
     </div>
-    <div style="display:flex; margin-left:10px; flex-wrap: wrap; gap:20px; margin:auto;
-     justify-content:center;">
-       
-      <div  class="senter" id="sender">
-       &nbsp;&nbsp;Вы указываете номер телефона, адрес и лучшее время для получения заказа.<br>
-       &nbsp;&nbsp;После того, как вы нажмете кнопку [Отправить заказ], вы попадете в Почту,
-         где сможете добавить информацию и проверить заказ.<br>
-         &nbsp;&nbsp;После того, как вы нажмете [Отправить письмо] и мы ответим вам через 15 минут.</div>
-      <div style="display:grid;text-align: center;">
-      <!-- Add hidden input for selected photos -->
-      <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-      
-      
-      
-        <label style="color:red; font-size:20px; font-weight: bold;" for="addressPhone">Напишите адрес и телефон : </label>
-        <textarea style="width:50%;" id="addressPhone" name="addressPhone" rows="7">
-Тел:
-
-Адрес:
-
-Время когда принести:</textarea></div>
-        <button style="border:3px solid black; margin-bottom:30px;box-shadow:3px 2px 1px red;
-        border-radius:15px 20px 15px 20px;
-          width:130px;height:60px;" type="submit">Отправить заказ</button>
-      
-    </div>
-    </form>
+   
     <div  class="senter" id="sender">
       &nbsp;&nbsp;<br>Если у вас возникли проблемы и что-то не понятно.  
       &nbsp;&nbsp;<br>Вы можете сделать это проще,
@@ -395,18 +342,16 @@
 <div style="display:flex; ">
   <div class="bod" > <img src=".\images\sungirl.png" width="200" height="230">
   </div>
-<div style="margin-top:30px; text-align:center;"  id="carousel-container">
-  
-<div id="image-container">
-            <!-- Add your images here -->
-			<img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3" onclick="selectPhoto(3)">
-            <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 1" onclick="selectPhoto(1)">
-            <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 2" onclick="selectPhoto(2)">
-            <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 3" onclick="selectPhoto(3)">
-        </div>
-        </div>
+  <div id="carousel-container">
+    <div id="image-container">
+      <img class="carousel-image" id="photo1" src=".\images\boy.png" alt="Image 1">
+      <img class="carousel-image" id="photo2" src=".\images\chinamen.png" alt="Image 2">
+      <img class="carousel-image" id="photo3" src=".\images\fatman.png" alt="Image 3">
+      <img class="carousel-image" id="photo1" src=".\images\office.png" alt="Image 4">
+      <img class="carousel-image" id="photo2" src=".\images\skyman.png" alt="Image 5">
+      <img class="carousel-image" id="photo3" src=".\images\sungirl.png" alt="Image 6">
+    </div>
+</div>
 	  
       
       <div class="bod" ><img src=".\images\sungirl.png" width="200" height="230"></div>
@@ -445,6 +390,6 @@
  
 
 </div> </div>
-<script src="js/woman.js" ></script>
+
 </body>
 </html>
