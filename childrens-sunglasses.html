@@ -9,9 +9,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Купить детские солнцезащитные очки</title>
-    <script src="js/sunglasess.js" defer></script>
-    <script src="js/keks.js" defer></script>
-    <script src="js/mountain.js"></script>
+    <script src="djekkynew.js" defer></script>
+    <script src="djekkynewtwo.js" defer></script>
     <link rel="stylesheet" href="jekky.css">
     <link rel="stylesheet" href="mountain.css">
     <link rel="shortcut icon" href=".\images\optik.svg" width="100" height="100" type="image/png">
@@ -261,29 +260,40 @@
                     <div id="image-container" class="hit">
                         <!-- Add your images here -->
                         <img class="carousel-image" id="photo1" src=".\images\Image888888.png" alt="Image 1"
-                            onclick="selectPhoto(1)">
+                            >
                         <img class="carousel-image" id="photo8801" src=".\images\drd8801 (1).png" alt="Image 8801"
-                            onclick="selectPhoto(8801)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8801')">
                         <img class="carousel-image" id="photo8802" src=".\images\drd8801 (2).png" alt="Image 8802"
-                            onclick="selectPhoto(8802)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8802')">
                         <img class="carousel-image" id="photo8803" src=".\images\drd8801 (3).png" alt="Image 8803"
-                            onclick="selectPhoto(8803)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8803')">
                         <img class="carousel-image" id="photo8804" src=".\images\drd8801 (4).png" alt="Image 8804"
-                            onclick="selectPhoto(8804)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8804')">
                         <img class="carousel-image" id="photo8805" src=".\images\drd8801 (5).png" alt="Image 8805"
-                            onclick="selectPhoto(8805)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8805')">
                         <img class="carousel-image" id="photo8806" src=".\images\drd8801 (6).png" alt="Image 8806"
-                            onclick="selectPhoto(8806)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8806')">
                         <img class="carousel-image" id="photo8807" src=".\images\drd8801 (7).png" alt="Image 8807"
-                            onclick="selectPhoto(8807)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8807')">
                         <img class="carousel-image" id="photo8808" src=".\images\drd8801 (8).png" alt="Image 8808"
-                            onclick="selectPhoto(8808)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8808')">
                         <img class="carousel-image" id="photo8809" src=".\images\drd8801 (9).png" alt="Image 8809"
-                            onclick="selectPhoto(8809)">
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8809')">
                         <img class="carousel-image" id="photo8810" src=".\images\drd8801 (10).png" alt="Image 8810"
-                            onclick="selectPhoto(8810)">    
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8810')">    
                         <img class="carousel-image" id="photo8811" src=".\images\drd8801 (11).png" alt="Image 8811"
-                            onclick="selectPhoto(8811)">       
+                               onclick="sendMessageToWhatsApp('+79315908599', 'order8811')">
+                               <p id="order8801" >Номер заказа : 8801 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8802" >Номер заказа : 8802 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8803">Номер заказа : 8803 Мы надеемся, что вы быстро ответите.</p>   
+                               <p id="order8804" >Номер заказа : 8804 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8805" >Номер заказа : 8805 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8806" >Номер заказа : 8806 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8807" >Номер заказа : 8807 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8808">Номер заказа : 8808 Мы надеемся, что вы быстро ответите.</p>   
+                               <p id="order8809" >Номер заказа : 8809 Мы надеемся, что вы быстро ответите.</p>
+                               <p id="order8810" >Номер заказа : 8810 Мы надеемся, что вы быстро ответите.</p> 
+                               <p id="order8811" >Номер заказа : 8811 Мы надеемся, что вы быстро ответите.</p>     
                         </div>
                         <button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
                         <button class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button>
@@ -314,23 +324,7 @@
     
             </main>
     
-            <form id="for" class="point" action="mailto:etumanov77@gmail.com" method="post" onsubmit="submitForm(event)">
-                <input type="hidden" name="selectedPhotos" id="selectedPhotos">
-                <br><br>
-                <div style="display:grid;gap:20px;justify-items:center;">
-                    <label for="addressPhone">Напишите адрес и телефон:</label>
-                    <textarea id="addressPhone" name="addressPhone" rows="7" cols="40">
-Tелефон:
-                                                    
-Адрес:
-                                                
-                                                    
-Время для получения:
-                                                     </textarea>  
-        <button style=" height:50px; border:3px solid goldenrod;margin-bottom: 30px;" type="submit">Отправить на заказ</button>
-                </div>
-            </form>
-            </div>
+           
 
 
             <div  class="senter" id="sender">
