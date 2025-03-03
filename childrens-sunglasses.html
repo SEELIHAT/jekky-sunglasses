@@ -50,7 +50,15 @@
 
   gtag('config', 'G-YZNK7MZSMY');
 </script>
-
+<script>
+    function changeDisplay() {
+      document.getElementById('myDiv').style.display = 'grid';
+      document.getElementById('myDiv').style.color = 'yellow';
+      document.getElementById('myDiv').style.fontStyle = 'italic';
+      document.getElementById('myDiv').style.fontWidth = 'bold';
+      document.getElementById('myDiv').style.fontSize = '20'+'px';
+      document.getElementById('button').style.display = 'none';
+    }</script>
 
 </head>
 
@@ -211,40 +219,45 @@
                   </div><button id="button"class="button" onclick="changeDisplay()">Прочитать все</button>
                     
             </div>
-        </section><section class="sectionyellow">
-        <h3 id="mois">Инструкция по использованию нашей программы.</h3>
-  
-
-
-
-       
-          <div class="newenttrens">
-            <div class="tv">
-              <img class="tvset" src="./images/womanwatchtv.webp">
-              <button class="newbut"><a href=".\images\choose in catalog.jpg">Нажмите для просмотра</a></button>
-            </div>
-            <div class="book">
-              <img class="tvset" src="./images/mansreadbook.webp">
-              <button class="newbutton" id="reading">Нажмите,<br> чтобы прочитать</button>
-            </div>
-          </div>
-          <p class="notsee" id="readText">
-            <span>1.</span> Сначала нажмите кнопку <strong>Выбрать файл</strong> сверху и слева на форме под текстом.<br>  
-            <span>2.</span> Выберите лучшую фотографию на вашем телефоне или компьютере и откройте её.<br>  
-            <span>3.</span> Нажмите кнопку <strong>В центр</strong>, чтобы уменьшить и центрировать фото.<br>  
-            <span>4.</span> Подстройте своё фото под рамку нужного размера головы, нажимая кнопки под фотографией:  
-            <strong>Больше</strong>, <strong>Меньше</strong>, <strong>Право</strong>, <strong>Лево</strong>, <strong>Ниже</strong>, <strong>Выше</strong>.<br>  
-            <span>5.</span> Далее нажмите <strong>Следующий</strong> или <strong>Предыдущий</strong>, чтобы подобрать очки нужного размера и фасона.<br>  
-            <span>6.</span> Кликните на фото, если вам понравились очки.<br>  
-            <span>7.</span> В WhatsApp вы сможете написать всю информацию о выбранных очках и нажать <strong>Отправить</strong>.<br>  
-            <span>8.</span> Как только мы освободимся, мы свяжемся с вами, чтобы уточнить время доставки.<br><br>  
-            
+        </section>
+        <section class="sectionyellow">
+            <h3 id="mois">Инструкция по использованию нашей программы.</h3>
+      
+    
+    
+    
            
+              <div class="newenttrens">
+                <div class="tv">
+                  <img class="tvset" src="./images/womanwatchtv.webp">
+                  <button class="newbut"><a href="https://rutube.r">Нажмите для просмотра</a></button>
+                </div>
+                <div class="book">
+                  <img class="tvset" src="./images/mansreadbook.webp">
+                  <button class="newbutton" id="reading">Нажмите,<br> чтобы прочитать</button>
+                </div>
+              </div>
+              <p class="notsee" id="readText">
+                <span>1.</span> Сначала нажмите кнопку <strong>Выбрать файл</strong> сверху и слева на форме под текстом.<br>  
+                <span>2.</span> Выберите лучшую фотографию на вашем телефоне или компьютере и откройте её.<br>  
+                <span>3.</span> Нажмите кнопку <strong>В центр</strong>, чтобы уменьшить и центрировать фото.<br>  
+                <span>4.</span> Подстройте своё фото под рамку нужного размера головы, нажимая кнопки под фотографией:  
+                <strong>Больше</strong>, <strong>Меньше</strong>, <strong>Право</strong>, <strong>Лево</strong>, <strong>Ниже</strong>, <strong>Выше</strong>.<br>  
+                <span>5.</span> Далее нажмите <strong>Следующий</strong> или <strong>Предыдущий</strong>, чтобы подобрать очки нужного размера и фасона.<br>  
+                <span>6.</span> Кликните на фото, если вам понравились очки.<br>  
+                <span>7.</span> В WhatsApp вы сможете написать всю информацию о выбранных очках и нажать <strong>Отправить</strong>.<br>  
+                <span>8.</span> Как только мы освободимся, мы свяжемся с вами, чтобы уточнить время доставки.<br><br>  
+                
+               
+                
+                <strong>Желаем вам отличного дня и удачных покупок!</strong>
+              </p>
             
-            <strong>Желаем вам отличного дня и удачных покупок!</strong>
-          </p>
-        
-        <div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
+            <script>let laja = document.querySelector('.newbutton');
+            laja.onclick = function() {
+              let not = document.querySelector('.notsee');
+              not.classList.toggle('newtextbutton'); // Toggles the .newtextbutton class
+            };</script><div class="spacearound"><p class="catalog1">Kаталог</p></div></section>
         <main style="display:flex; justify-content:center; margin:auto; overflow:hidden;">
             <div class="bodi">
                 <img class="ras"  src=".\images\boy.png"
