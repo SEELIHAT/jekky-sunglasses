@@ -73,8 +73,8 @@ form{margin-top:30px;}
 	.down{padding:10px; border:2px solid black;margin:15px;}
 	.left{padding:10px; border:2px solid black;margin:15px;}
 	.right{padding:10px; border:2px solid black;margin:15px;}
-	.prev{padding:10px; border:2px solid black;margin:15px;}
-	.next{padding:10px; border:2px solid black;margin:15px;}
+	.prev{padding:5px; border:2px solid black;margin:15px;font-size:10px;}
+	.next{padding:5px; border:2px solid black;margin:15px;font-size:10px;}
 	.more{padding:10px; border:2px solid black;margin:15px;}
 	.less{padding:10px; border:2px solid black;margin:15px;}
 	.circle-container {

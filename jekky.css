@@ -305,7 +305,7 @@ div .hop{display:grid; gap:10px;}
                                 }
                             
                                 #prevBtn,
-                                #nextBtn {padding-top: 10px;padding-bottom: 10px;
+                                #nextBtn {padding-top: 5px;
                                     position: absolute;
                                     top: 90%;
                                     transform: translateY(-50%);
@@ -448,3 +448,6 @@ div .hop{display:grid; gap:10px;}
         visibility: hidden;
     }
 }
+.downup{z-index:1500;text-align:center;margin:auto;position:relative;margin-top:35px;}
+.thankcenter{text-align:center;padding:10px; border:2px solid black;margin:15px;}
+.textalign{text-align:center;margin-top:20px;}

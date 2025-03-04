@@ -360,11 +360,12 @@
                             <p id="order9035">Номер заказа : 9035 Мы надеемся, что вы быстро ответите.</p>          
                         </div>
                         
-                        <button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
-                        <button class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button>
+                       
     
                     </div>
-                    <div style="text-align:center;margin-top:10px;">
+                    <div class="downup"> <button class="prev" id="prevBtn" onclick="changeSlide(-1)">Предыдущий</button>
+                        <button  class="next" id="nextBtn" onclick="changeSlide(1)">Следующий</button></div>
+                    <div style="text-align:center;margin-top:40px;">
                         
                         <button class="up" id="up" onclick="moveBackground('up')">Вверх</button>
                         <button class="down" id="down" onclick="moveBackground('down')">Вниз</button>
@@ -373,11 +374,11 @@
     
                     </div>
                     
-                    <div style="text-align:center;margin-top:20px;"><button class="less" id="less"
+                    <div class="textalign"><button class="less" id="less"
                             onclick="moveBackground('less')">Меньше</button>
     
     
-                        <button style="text-align:center;padding:10px; border:2px solid black;margin:15px;"
+                        <button class="thankcenter"
                             id="resizeBackground" onclick="resizeBackground()">В центр</button>
     
                         <button class="more" id="more" onclick="moveBackground('more')">Больше</button>
