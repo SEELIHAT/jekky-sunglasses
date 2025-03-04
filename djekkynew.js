@@ -190,6 +190,12 @@ opentextButton.onclick = function() {
   }
 };
 
+document.addEventListener('gesturestart', function (event) {
+    event.preventDefault();
+});
+document.addEventListener('dblclick', function (event) {
+    event.preventDefault();
+});
 
 
 /* function sendMessageToWhatsApp(phoneNumber, orderId) {
