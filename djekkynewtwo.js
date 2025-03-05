@@ -1,7 +1,7 @@
  
 function sendMessageToWhatsApp(phoneNumber, textElementId) {
     // Initial message
-    var message = "Hello, I want to order:";
+    var message = "Здравствуйте, хочу заказать оптику";
 
     // Get the text content from the specified element by ID
     var additionalMessage = document.getElementById(textElementId).textContent;
