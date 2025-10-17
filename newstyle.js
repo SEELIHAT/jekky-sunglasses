@@ -2,7 +2,7 @@
   function sendToWhatsApp(id) {
       var priceText = document.getElementById("price" + id).innerText;
       var message = encodeURIComponent(priceText);
-      var whatsappURL = "https://api.whatsapp.com/send?phone=+79315908599&text=" + message;
+      var whatsappURL = "https://api.whatsapp.com/send?phone=+79247827311&text=" + message;
       window.open(whatsappURL, '_blank');
   }
 

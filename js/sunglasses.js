@@ -117,7 +117,7 @@ var isYellow = false;
     }
 
     function sendOrderInfo(selectedPhotoNumbers, addressPhone) {event.preventDefault();
-      var email = 'etumanov77@gmail.com';
+      var email = 'Наша электронная почта';
       var subject = 'Photo Order';
       var body = 'Selected photo numbers for the order: ' + selectedPhotoNumbers + '\nAddress and phone: ' + addressPhone;
 
@@ -194,7 +194,7 @@ var isYellow = false;
         const emailMessage = `Selected photo: ${selectedPhotoId}, Photo number: ${selectedPhotoNumber}`;
 
         // Replace the following line with your logic to send the email.
-        console.log("Email sent to etumanov77@gmail.com with message:", emailMessage);
+        console.log("Email sent to Наша электронная почта with message:", emailMessage);
 		
 		
     }
@@ -269,7 +269,7 @@ var isYellow = false;
     }
 
     function sendOrderInfo(selectedPhotoNumbers, addressPhone) {event.preventDefault();
-      var email = 'etumanov77@gmail.com';
+      var email = 'Наша электронная почта';
       var subject = 'Photo Order';
       var body = 'Selected photo numbers for the order: ' + selectedPhotoNumbers + '\nAddress and phone: ' + addressPhone;
 

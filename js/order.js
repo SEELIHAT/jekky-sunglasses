@@ -85,7 +85,7 @@ function resizeBackground() {
     }
 
     function sendOrderInfo(selectedPhotoNumbers, addressPhone) {event.preventDefault();
-      var email = 'etumanov77@gmail.com';
+      var email = 'Наша электронная почта';
       var subject = 'Photo Order';
       var body = 'Selected photo numbers for the order: ' + selectedPhotoNumbers + '\nAddress and phone: ' + addressPhone;
 
@@ -166,7 +166,7 @@ function resizeBackground() {
 
 function sendOrderInfo(selectedPhotoNumbers, addressPhone) {
     event.preventDefault();
-    var email = 'etumanov77@gmail.com';
+    var email = 'Наша электронная почта';
     var subject = 'Photo Order';
 
     // Construct the body of the email, including the selected photo numbers
